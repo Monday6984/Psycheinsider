@@ -1,0 +1,18 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /temp/
+
+# Point to sitemap
+Sitemap: https://psycheinsider.com/sitemap.xml
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Request a page reindex interval
+Request-rate: 1/10
+
+# Comment: This robots.txt allows search engine crawlers to index all public pages
+# while preventing crawling of private directories (if they exist)

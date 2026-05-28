@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Psychology Services - Individual & Corporate</title>
+<meta name="description" content="Explore our psychology consultation services, from individual therapy to corporate wellness programs. Book your consultation today.">
+<meta name="keywords" content="psychology services, consulting, therapy, corporate wellness, professional consultation">
+<meta name="author" content="PsycheInsider">
+<meta name="language" content="English">
+<link rel="canonical" href="https://psycheinsider.com/services">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Professional Psychology Services">
+<meta property="og:description" content="Explore our psychology consultation and wellness services for individuals and corporations.">
+<meta property="og:url" content="https://psycheinsider.com/services">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Professional Psychology Services">
+<meta name="twitter:description" content="Psychology consulting and wellness programs for individuals and corporations."
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1B6B3A;--dgreen:#134E2A;--ddgreen:#0C3319;
+  --gold:#DAB252;--dgold:#B8932E;--lgold:#F5E8C4;--xlgold:#FAF3E0;
+  --o:#E8650A;
+  --ink:#0A1A0E;--body:#2A3D2E;--muted:#5C7062;
+  --cream:#FAF6ED;--sage:#EEF5EE;--offwhite:#F7FAF7;--warm:#FBF6EC;
+  --b:rgba(27,107,58,0.14);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:999;height:80px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--b)}
+.logo{display:flex;align-items:center;gap:12px}
+.lmark{width:auto;height:44px;object-fit:contain;display:block}
+.lname{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--ink)}
+.lname b{color:var(--green)}
+.nmenu{display:flex;align-items:center;gap:36px}
+.nmenu a{font-size:0.83rem;font-weight:500;color:var(--body);transition:color .2s}
+.nmenu a:hover{color:var(--green)}
+.nmenu a.active{color:var(--green);font-weight:600}
+.ncta{background:var(--green);color:#fff!important;padding:10px 24px;border-radius:6px;font-size:0.82rem;font-weight:600;transition:background .2s}
+.ncta:hover{background:var(--dgreen)!important}
+
+/* BUTTONS */
+.btn-green{background:var(--green);color:#fff;padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:600;border:2px solid var(--green);transition:all .2s;display:inline-block}
+.btn-green:hover{background:var(--dgreen);border-color:var(--dgreen)}
+.btn-gold{background:var(--gold);color:var(--ink);padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:700;border:2px solid var(--gold);transition:all .2s;display:inline-block}
+.btn-gold:hover{background:var(--dgold);border-color:var(--dgold)}
+.btn-outline-green{background:transparent;color:var(--green);padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:600;border:2px solid var(--green);transition:all .2s;display:inline-block}
+.btn-outline-green:hover{background:var(--green);color:#fff}
+.btn-outline-gold{background:transparent;color:var(--dgold);padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:600;border:2px solid var(--gold);transition:all .2s;display:inline-block}
+.btn-outline-gold:hover{background:var(--gold);color:var(--ink)}
+.btn-ow{background:transparent;color:#fff;padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:600;border:2px solid rgba(255,255,255,0.35);transition:all .2s;display:inline-block}
+.btn-ow:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
+.btn-w{background:#fff;color:var(--green);padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:700;border:2px solid #fff;transition:all .2s;display:inline-block}
+.btn-w:hover{background:rgba(255,255,255,0.92)}
+
+/* SHARED */
+.slabel{display:inline-block;font-size:0.67rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:14px}
+.slabel.gold{color:var(--dgold)}
+.slabel.w{color:rgba(255,255,255,0.4)}
+.shead{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.3rem);font-weight:600;line-height:1.14;letter-spacing:-0.5px;color:var(--ink);margin-bottom:20px}
+.shead.white{color:#fff}
+.srule{width:54px;height:3px;background:linear-gradient(90deg,var(--green),var(--gold));border-radius:2px;margin-bottom:34px}
+.srule.center{margin-left:auto;margin-right:auto}
+.srule.gold{background:linear-gradient(90deg,var(--gold),var(--dgold))}
+.sbody{font-size:1rem;color:var(--body);line-height:1.9}
+.sec-intro{max-width:720px;margin:0 auto;text-align:center;margin-bottom:80px}
+.sec-intro .srule{margin:0 auto 34px}
+
+/* PAGE HERO */
+.page-hero{
+  background:linear-gradient(150deg,var(--ddgreen) 0%,var(--dgreen) 45%,#1A4A25 100%);
+  padding:140px 7% 120px;text-align:center;position:relative;overflow:hidden;
+}
+.ph-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.22;mix-blend-mode:screen;z-index:0;}
+.page-hero::before{content:'';position:absolute;top:-100px;right:-80px;width:520px;height:520px;border-radius:50%;background:rgba(218,178,82,0.1);pointer-events:none}
+.page-hero::after{content:'';position:absolute;bottom:-80px;left:-60px;width:380px;height:380px;border-radius:50%;background:rgba(218,178,82,0.07);pointer-events:none}
+.ph-wm{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:30rem;font-weight:700;color:rgba(255,255,255,0.025);line-height:1;pointer-events:none;white-space:nowrap}
+.ph-label{font-size:0.67rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-bottom:22px;display:block;position:relative;z-index:1}
+.ph-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4.2rem);font-weight:600;line-height:1.1;letter-spacing:-0.8px;color:#fff;margin-bottom:24px;position:relative;z-index:1;max-width:900px;margin-left:auto;margin-right:auto}
+.ph-sub{font-size:1.02rem;color:rgba(255,255,255,0.55);line-height:1.85;max-width:700px;margin:0 auto 52px;position:relative;z-index:1}
+.ph-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+
+/* WHO */
+.s-who{background:linear-gradient(160deg,#F3FAF5 0%,#FBF6EA 100%);padding:120px 7%}
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1100px;margin:0 auto}
+.who-col{background:#fff;border-radius:18px;padding:48px 40px;border:1px solid rgba(27,107,58,0.1)}
+.who-col-title{font-size:0.68rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--dgold);margin-bottom:26px}
+.who-list{display:flex;flex-direction:column;gap:12px}
+.who-item{display:flex;align-items:flex-start;gap:12px;font-size:0.91rem;color:var(--body);line-height:1.6}
+.who-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px}
+.challenge-tags{display:flex;flex-wrap:wrap;gap:10px}
+.ctag{padding:8px 16px;border-radius:50px;font-size:0.82rem;font-weight:500;border:1.5px solid transparent;cursor:default}
+.ctag-g{background:rgba(27,107,58,0.07);color:var(--dgreen);border-color:rgba(27,107,58,0.2)}
+.ctag-au{background:rgba(218,178,82,0.1);color:#7A5C10;border-color:rgba(218,178,82,0.28)}
+
+/* APPROACH */
+.s-approach{background:#fff;padding:120px 7%}
+.approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:1100px;margin:44px auto 0;border:1px solid rgba(27,107,58,0.12);border-radius:16px;overflow:hidden}
+.ap-item{padding:40px 32px;border-right:1px solid rgba(27,107,58,0.1);background:#fff;transition:background .2s;position:relative;overflow:hidden}
+.ap-item:last-child{border-right:none}
+.ap-item::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.ap-item:hover{background:var(--offwhite)}
+.ap-item:hover::after{transform:scaleX(1)}
+.ap-icon{width:44px;height:44px;border-radius:11px;background:rgba(27,107,58,0.07);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.ap-icon svg{width:22px;height:22px;stroke:var(--green);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ap-pill{display:inline-block;font-size:0.7rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dgold);margin-bottom:14px;background:rgba(218,178,82,0.1);padding:4px 10px;border-radius:4px}
+.ap-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:10px;line-height:1.3}
+.ap-body{font-size:0.84rem;color:var(--muted);line-height:1.75}
+.approach-note{max-width:700px;margin:48px auto 0;padding:36px 44px;text-align:center;background:linear-gradient(135deg,rgba(27,107,58,0.05),rgba(218,178,82,0.06));border-radius:14px;border:1px solid rgba(218,178,82,0.18)}
+.approach-note p{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-style:italic;color:var(--dgreen);line-height:1.65}
+
+/* SERVICES SECTION */
+.s-services{background:linear-gradient(160deg,#F3FAF5 0%,#FBF6EA 100%);padding:120px 7%}
+
+/* SERVICE CARD */
+.svc-card{background:#fff;border-radius:20px;border:1px solid rgba(27,107,58,0.1);overflow:hidden;margin-bottom:32px;transition:box-shadow .3s}
+.svc-card:hover{box-shadow:0 20px 60px rgba(27,107,58,0.1)}
+.svc-header{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start;padding:56px 56px 40px;border-bottom:1px solid rgba(27,107,58,0.08)}
+.svc-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(27,107,58,0.1);line-height:1;margin-bottom:10px;display:block}
+.svc-num-row{display:flex;align-items:center;gap:16px;margin-bottom:10px}
+.svc-num-row .svc-num{margin-bottom:0}
+.svc-icon{width:52px;height:52px;border-radius:14px;background:rgba(27,107,58,0.07);border:1px solid rgba(27,107,58,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.svc-icon svg{width:26px;height:26px;stroke:var(--green);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.svc-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:600;color:var(--ink);margin-bottom:14px;line-height:1.2}
+.svc-overview{font-size:0.96rem;color:var(--body);line-height:1.88;max-width:620px}
+
+/* PRICE BADGE */
+.svc-price-badge{flex-shrink:0;background:linear-gradient(145deg,var(--dgreen),var(--ddgreen));border-radius:14px;padding:28px 32px;text-align:center;min-width:200px}
+.svc-price-badge.gold-badge{background:linear-gradient(145deg,var(--dgold),#8A6A1A)}
+.svc-price-badge.deep-green{background:linear-gradient(145deg,var(--ddgreen),#071F0F)}
+.spb-from{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.42);margin-bottom:6px}
+.spb-price{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:600;color:#fff;line-height:1.1;margin-bottom:4px}
+.spb-unit{font-size:0.75rem;color:rgba(255,255,255,0.42)}
+.spb-cta{display:block;margin-top:18px;background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:10px 20px;border-radius:6px;font-size:0.8rem;font-weight:600;text-align:center;transition:all .2s}
+.spb-cta:hover{background:rgba(255,255,255,0.22)}
+.spb-cta.gold-cta{background:rgba(218,178,82,0.2);border-color:rgba(218,178,82,0.4);color:var(--gold)}
+.spb-cta.gold-cta:hover{background:rgba(218,178,82,0.35)}
+
+.svc-body{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}
+.svc-col{padding:40px 44px;border-right:1px solid rgba(27,107,58,0.07)}
+.svc-col:last-child{border-right:none}
+.svc-col-title{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--dgold);margin-bottom:18px}
+.svc-items{display:flex;flex-direction:column;gap:9px}
+.svc-items li{list-style:none;display:flex;align-items:flex-start;gap:10px;font-size:0.86rem;color:var(--body);line-height:1.55}
+.svc-items li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px}
+
+/* PRICING TIERS */
+.svc-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(27,107,58,0.08)}
+.tier{padding:44px 40px;border-right:1px solid rgba(27,107,58,0.07);position:relative;transition:background .2s;background:#fff}
+.tier:last-child{border-right:none}
+.tier:hover{background:var(--offwhite)}
+.tier.featured{background:linear-gradient(160deg,rgba(218,178,82,0.07),rgba(27,107,58,0.04));border-top:3px solid var(--gold)}
+.tier-label{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.tier-label.gold{color:var(--dgold)}
+.tier-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.tier-desc{font-size:0.84rem;color:var(--muted);line-height:1.7;margin-bottom:22px}
+.tier-price{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--dgreen);line-height:1;margin-bottom:6px}
+.tier-price.gold{color:var(--dgold)}
+.tier-note{font-size:0.75rem;color:var(--muted)}
+.tier-btn{display:inline-block;margin-top:22px;padding:11px 24px;border-radius:6px;font-size:0.82rem;font-weight:600;transition:all .2s}
+.tier-btn.green{background:var(--green);color:#fff}
+.tier-btn.green:hover{background:var(--dgreen)}
+.tier-btn.gold{background:var(--gold);color:var(--ink)}
+.tier-btn.gold:hover{background:var(--dgold)}
+.tier-btn.outline{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.tier-btn.outline:hover{background:var(--green);color:#fff}
+.tier-featured-tag{position:absolute;top:18px;right:20px;font-size:0.62rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--dgold);background:rgba(218,178,82,0.1);padding:3px 10px;border-radius:20px}
+
+/* OPTIMIZE CARD */
+.opt-svc-card{
+  background:linear-gradient(150deg,var(--ddgreen) 0%,var(--dgreen) 50%,#1A4A25 100%);
+  border-radius:20px;padding:64px 56px;position:relative;overflow:hidden;margin-bottom:0;
+}
+.opt-svc-card::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;background:rgba(218,178,82,0.1);pointer-events:none}
+.opt-svc-card::after{content:'';position:absolute;bottom:-60px;left:-60px;width:300px;height:300px;border-radius:50%;background:rgba(218,178,82,0.06);pointer-events:none}
+.osc-top{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start;margin-bottom:52px;position:relative;z-index:1}
+.osc-label{font-size:0.67rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.osc-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:600;color:#fff;margin-bottom:16px;line-height:1.15}
+.osc-body{font-size:0.96rem;color:rgba(255,255,255,0.55);line-height:1.85;max-width:560px}
+.osc-price-box{flex-shrink:0;min-width:200px;background:rgba(218,178,82,0.15);border:1px solid rgba(218,178,82,0.3);border-radius:14px;padding:28px 32px;text-align:center}
+.osc-from{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:6px}
+.osc-price{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:600;color:var(--gold);margin-bottom:4px}
+.osc-unit{font-size:0.75rem;color:rgba(255,255,255,0.35)}
+.osc-cta{display:block;margin-top:18px;background:var(--gold);color:var(--ink);padding:10px 20px;border-radius:6px;font-size:0.8rem;font-weight:700;text-align:center;transition:all .2s}
+.osc-cta:hover{background:var(--dgold)}
+.osc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;z-index:1}
+.osc-item{background:rgba(255,255,255,0.06);border-radius:12px;padding:28px 24px;border:1px solid rgba(255,255,255,0.07);border-top:2px solid rgba(218,178,82,0.4);transition:all .2s}
+.osc-item:hover{background:rgba(255,255,255,0.09);border-top-color:var(--gold)}
+.osc-item-icon{width:38px;height:38px;border-radius:9px;background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.osc-item-icon svg{width:19px;height:19px;stroke:rgba(218,178,82,0.85);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.osc-item-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:#fff;margin-bottom:8px}
+.osc-item-body{font-size:0.81rem;color:rgba(255,255,255,0.42);line-height:1.7}
+
+/* PROCESS */
+.s-process{background:#fff;padding:120px 7%}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:1100px;margin:0 auto;border:1px solid rgba(27,107,58,0.12);border-radius:16px;overflow:hidden}
+.ps{padding:44px 36px;border-right:1px solid rgba(27,107,58,0.08);background:#fff;transition:background .2s;position:relative}
+.ps:last-child{border-right:none}
+.ps:hover{background:var(--offwhite)}
+.ps-line{position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.ps:hover .ps-line{transform:scaleX(1)}
+.ps-step{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:rgba(27,107,58,0.12);line-height:1;margin-bottom:10px;display:block}
+.ps-icon{width:44px;height:44px;border-radius:11px;background:rgba(27,107,58,0.07);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.ps-icon svg{width:22px;height:22px;stroke:var(--green);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ps-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:10px}
+.ps-body{font-size:0.84rem;color:var(--muted);line-height:1.75}
+
+/* WHY DIFFERENT */
+.s-why{background:linear-gradient(150deg,var(--ddgreen) 0%,var(--dgreen) 50%,#1A4A25 100%);padding:120px 7%;text-align:center;position:relative;overflow:hidden}
+.s-why::before{content:'';position:absolute;top:-80px;right:-80px;width:450px;height:450px;border-radius:50%;background:rgba(218,178,82,0.1);pointer-events:none}
+.s-why::after{content:'';position:absolute;bottom:-60px;left:-60px;width:350px;height:350px;border-radius:50%;background:rgba(218,178,82,0.06);pointer-events:none}
+.why-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
+.why-list{display:flex;flex-direction:column;gap:0;margin:48px auto;max-width:680px;border:1px solid rgba(255,255,255,0.08);border-radius:14px;overflow:hidden}
+.wl-item{padding:22px 32px;background:rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.06);font-size:0.96rem;color:rgba(255,255,255,0.7);line-height:1.6;display:flex;align-items:center;gap:14px}
+.wl-item:last-child{border-bottom:none}
+.wl-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.wl-icon{width:28px;height:28px;border-radius:50%;background:rgba(218,178,82,0.15);border:1px solid rgba(218,178,82,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.wl-icon svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* PARTNERSHIPS */
+.s-partnerships{background:linear-gradient(160deg,#F3FAF5 0%,#FBF6EA 100%);padding:120px 7%}
+.partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:0 auto}
+.partner-card{background:#fff;border-radius:18px;padding:48px 36px;border:1px solid rgba(27,107,58,0.1);border-top:4px solid transparent;transition:all .3s}
+.partner-card:nth-child(1){border-top-color:var(--green)}
+.partner-card:nth-child(2){border-top-color:var(--gold)}
+.partner-card:nth-child(3){border-top-color:var(--dgold)}
+.partner-card:hover{box-shadow:0 20px 60px rgba(27,107,58,0.1);transform:translateY(-6px)}
+.pc-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.pc-icon svg{width:24px;height:24px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pc-icon.green-icon{background:rgba(27,107,58,0.08)}
+.pc-icon.green-icon svg{stroke:var(--green)}
+.pc-icon.gold-icon{background:rgba(218,178,82,0.1)}
+.pc-icon.gold-icon svg{stroke:var(--dgold)}
+.pc-type{font-size:0.65rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+.pc-type.gold{color:var(--dgold)}
+.pc-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--ink);margin-bottom:12px;line-height:1.3}
+.pc-body{font-size:0.87rem;color:var(--muted);line-height:1.8;margin-bottom:28px}
+.pc-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.pc-tag{padding:5px 13px;background:var(--offwhite);border:1px solid rgba(27,107,58,0.12);border-radius:4px;font-size:0.75rem;font-weight:500;color:var(--body)}
+.pc-cta{display:inline-flex;align-items:center;gap:6px;font-size:0.84rem;font-weight:600;color:var(--green);border-bottom:1.5px solid rgba(27,107,58,0.3);padding-bottom:2px;transition:all .2s}
+.pc-cta:hover{color:var(--dgold);border-color:var(--dgold)}
+
+/* FAQ */
+.s-faq{background:#fff;padding:120px 7%}
+.faq-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:0;border:1px solid rgba(27,107,58,0.12);border-radius:16px;overflow:hidden}
+.faq-item{border-bottom:1px solid rgba(27,107,58,0.08)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{padding:28px 36px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#fff;transition:background .2s}
+.faq-q:hover{background:var(--offwhite)}
+.faq-q-text{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--ink);line-height:1.4}
+.faq-icon{width:28px;height:28px;border-radius:50%;background:rgba(27,107,58,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;color:var(--green);transition:all .2s}
+.faq-a{display:none;padding:0 36px 28px;font-size:0.92rem;color:var(--body);line-height:1.82}
+.faq-item.open .faq-a{display:block}
+.faq-item.open .faq-icon{background:var(--green);color:#fff;transform:rotate(45deg)}
+
+/* FINAL CTA */
+.s-cta{background:linear-gradient(150deg,var(--ddgreen) 0%,var(--dgreen) 50%,#1A4A25 100%);padding:140px 7%;text-align:center;color:#fff;position:relative;overflow:hidden}
+.s-cta::before{content:'';position:absolute;top:-100px;right:-80px;width:520px;height:520px;border-radius:50%;background:rgba(218,178,82,0.1);pointer-events:none}
+.s-cta::after{content:'';position:absolute;bottom:-80px;left:-60px;width:380px;height:380px;border-radius:50%;background:rgba(218,178,82,0.07);pointer-events:none}
+.cta-wm{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:30rem;font-weight:700;color:rgba(255,255,255,0.02);line-height:1;pointer-events:none}
+.s-cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:600;line-height:1.12;max-width:780px;margin:0 auto 22px;position:relative;z-index:1}
+.s-cta p{font-size:1rem;color:rgba(255,255,255,0.58);max-width:540px;margin:0 auto 48px;line-height:1.85;position:relative;z-index:1}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+
+/* FOOTER */
+footer{background:linear-gradient(160deg,#EEF7F0 0%,#FAF4E4 100%);border-top:1px solid rgba(27,107,58,0.12);padding:90px 7% 48px}
+.fg{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.5fr;gap:64px;margin-bottom:60px;align-items:start}
+.f-desc{font-size:0.87rem;color:var(--muted);line-height:1.85;margin:18px 0 28px}
+.fsocs{display:flex;gap:10px}
+.fsoc{width:40px;height:40px;border-radius:9px;border:1px solid rgba(27,107,58,0.2);background:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--muted);transition:all .2s;cursor:pointer}
+.fsoc:hover{background:var(--green);color:#fff;border-color:var(--green)}
+.fh{font-size:0.67rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink);margin-bottom:22px}
+.flinks{display:flex;flex-direction:column;gap:12px}
+.flinks a{font-size:0.87rem;color:var(--muted);transition:color .15s}
+.flinks a:hover{color:var(--green)}
+.fnote{font-size:0.8rem;color:var(--muted);line-height:1.65;margin-bottom:13px}
+.femail{display:flex;border:1.5px solid rgba(27,107,58,0.2);border-radius:9px;overflow:hidden;background:#fff}
+.femail input{flex:1;border:none;padding:13px 16px;font-size:0.83rem;color:var(--ink);outline:none;background:transparent;font-family:'Inter',sans-serif}
+.femail button{background:var(--green);color:#fff;border:none;padding:13px 22px;font-size:0.82rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s}
+.femail button:hover{background:var(--dgreen)}
+.fci{margin-top:18px;display:flex;flex-direction:column;gap:9px}
+.fci div{font-size:0.83rem;color:var(--muted);display:flex;align-items:center;gap:9px}
+.fci b{color:var(--green)}
+.fbot{padding-top:28px;border-top:1px solid rgba(27,107,58,0.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.fbot-l{font-size:0.77rem;color:var(--muted)}
+.fbot-r{display:flex;gap:22px}
+.fbot-r a{font-size:0.77rem;color:var(--muted);transition:color .15s}
+.fbot-r a:hover{color:var(--green)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo"><img class="lmark" src="images/Psyche Insider Logo-03.png" alt="Psyche Insider"></div>
+  <div class="nmenu">
+    <a href="/">Home</a><a href="/about">About</a><a href="/optimize">OPTIMIZE</a>
+    <a href="/blog">Blog</a><a href="/services" class="active">Services</a>
+    <a href="/contact" class="ncta">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <img class="ph-bg-img" src="data:image/jpeg;base64,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UNKn3x9aAJ5p5RIwDmmfaJf75ps/+tamUAS/aJf75pfPl/vmohRQBL58v980efL/AHzUVFAEvny/3zR58v8AfNRUUAS+fL/fNKk8u4fOahpU++PrQBPNPIJCA5pnny/3zTZ/9a1MoAl8+X++aPPl/vmoqKAJfPl/vmjz5f75qKigCXz5f75o8+X++aiooAl8+X++aVJ5dw+c1DSp98fWgCeaeQSEBzTPPl/vmmz/AOtamUAS+fL/AHzR58v981FRQBL58v8AfNHny/3zUVFAEvny/wB80efL/fNRUUAS+fL/AHzSpPLuHzmoaVPvj60ATzTyCQgOaZ58v9802f8A1rUygCXz5f75o8+X++aiooAl8+X++aKiooAbd/8AHzJ9ahqa7H+kP9aixViEopcUYoASilxRigBKKXFGKAEpyffH1pMUqD5x9aAHXH+ub61HUtwP3zVHigBKKXFGKAEopcUYoASilxRigBKcn3x9aTFKg+cfWgB1x/rm+tR1LcD981R4oASilxRigBKKXFGKAEopcUYoASnJ98fWkxSoPnH1oAdcf65vrUdS3A/fNUeKAEopcUYoASilxRigBKKXFGKAEpyffH1pMUqD5x9aAHXH+ub61HUtwP3zVHigBKKXFGKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiikAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFKKMUUALRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigApaTFLSAKKKKAClT74+tJSp98fWgB8/+tao6kn/1rVHQCCiiihDClFJS0AFFFFAgpyffH1ptOT74+tAx0/8ArWqOpJ/9a1R0AFFFFABRRRQAUopKUUALSp98fWkpU++PrQA6f/WtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAUUUUgCiiigAooooAKVPvj60lKn3x9aAHT/wCtamVJP/rWqPFABRRijFABRRijFABRRijFABSp98fWkxTkHzj60ALP/rWpgqScfvWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAUUUUAFFFFABRRRQAUqffH1pKVPvj60AOn/wBa1Mp8/wDrWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f8A1rUynz/61qZQAUUUUAFFFFACXf8Ax8P9ahqa7/4+H+tQ1YgooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP8AWtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/wBa1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/AFrVHUlx/rWqOgAooopAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdADqKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP8AWtUdABRRRQAoooFFIAooooAKVPvj60lKn3x9aAHz/wCtao6kn/1rVHQCCiiigYClpBS0CCiiigApyffH1ptOT74+tAx0/wDrWqOpJ/8AWtUdABRRRQAUUUUAFKKSlFAC0qffH1pKVPvj60AOn/1rUynz/wCtamUAFFFFABRRRQAUUUUAFKn3x9aSlT74+tADp/8AWtTKfP8A61qZQAUUUUgCiiigAooooAKVPvj60lKn3x9aAHzf61qZT5v9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f8A1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAS7/AOPh/rUNTXf/AB8P9ahqxBRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdIAooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdTXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRS0AAooopAFFFFABSp98fWkpU++PrQA+f/WtUdST/wCtao6YwoopRQAgpaKKQgooooAKcn3x9abTk++PrQMdP/rWqOpJ/wDWtUdABRRRQAUUUUAFLQKWgApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKQBRRRQAUUUUAFFApaAEpU++PrRSp98fWgB03+tamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f/AFrUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/wCtamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/wDrWplPn/1rUygAooooAKKKKAEu/wDj4f61DU92rfaH4PWotjehqxDaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NIBtFO2N6GjY3oaAG0U7Y3oaNjehoAbRTtjeho2N6GgBtOT74+tGxvQ05EbeOD1oAdcf61qjqWdW81uDUexvQ0AJRS7G9DRsb0NACUUuxvQ0bG9DQAlFLsb0NGxvQ0AJSp98fWjY3oaciNvHB60ALcf61qjqWdW81uDUexvQ0AJS0bG9DS7W9DSASil2t6Gja3oaAEopdreho2t6GgBKVPvj60bW9DTkVt44NACz/wCtao6lnVvNbg1Htb0NMYlKKNrehpQrehoASinbW9DRtb0NIQ2inbW9DRtb0NADacn3x9aNrehpUVt44NAxZ/8AWtUdSzq3mtwaZtb0NADaKdtb0NG1vQ0ANop21vQ0bW9DQAgpaArehpdrehoASlT74+tG1vQ05FbcODQAT/61qZUs6t5rcGo9rehoASil2t6Gja3oaAEopdreho2t6GgBKKXa3oaNrehoASlT74+tG1vQ05FbcODQAT/61qZUs6t5rcGo9rehpAJRS7W9DRtb0NACUUu1vQ0bW9DQAgpaUK3oaNrehoASlT74+tG1vQ05FbcODQAT/wCtamVLMreY3BqPa3oaAEopdreho2t6GgBKKXa3oaNrehoASil2t6Gja3oaAEpU++PrRtb0NORW3Dg0AE/+tamVLMreY3BqPa3oaAEopdreho2t6GgBKKXa3oaNrehoASil2t6Gja3oaAEpU++PrRtb0NORW3Dg0AE/+tamVLMreY3BqPa3oaAEopdreho2t6GgBKKXa3oaNrehoASil2t6Gja3oaAEpU++PrRtb0NORW3Dg0AE/wDrWplSzK3mNwaj2t6GgBKKXa3oaNrehoASil2t6Gja3oaAEopdreho2t6GgBKVPvj60bW9DTkVtw4NABP/AK1qZUsyt5jcGo9rehoASil2t6Gja3oaAEopdrehooAW6lcXDgMetRedJ/eNOu/+Ph/rUNWIk86T+8aPOk/vGo6KAJPOk/vGjzpP7xqOigCTzpP7xo86T+8ajooAk86T+8ackz7x8x61DTk++PrQBNPM4lbDGo/Ok/vGi4/1rVHQBJ50n940edJ/eNR0UASedJ/eNHnSf3jUdFAEnnSf3jR50n941HRQBJ50n9405Jn3j5j1qGnJ98fWgCaeZxK2GNR+dJ/eNFx/rWqOgCTzpP7xo86T+8ajooAk86T+8aPOk/vGo6KAJPOk/vGjzpP7xqOigCTzpP7xpyTPvHzHrUNOT74+tAE08ziVsMaj86T+8aLj/WtUdAEnnSf3jR50n941HRQBJ50n940edJ/eNR0UASedJ/eNHnSf3jUdFAEnnSf3jTkmfePmPWoacn3x9aAJp5nErYY1H50n940XH+tao6AJPOk/vGjzpP7xqOigCTzpP7xo86T+8ajooAk86T+8aPOk/vGo6KAJPOk/vGnJM+8fMetQ05Pvj60ATTzOJWwxqPzpP7xouP8AWtUdAEnnSf3jR50n941HRQBJ50n940edJ/eNR0UASedJ/eNHnSf3jUdFAEnnSf3jTkmfePmPWoacn3x9aAJp5nErYY1H50n940XH+tao6QEnnSf3jR50n941HRQBJ50n940edJ/eNR0UASedJ/eNHnSf3jUdFAEvmyf3jTklfePmPWoacn3x9aAJp5XErAMaZ50n940XH+tao6AJPOk/vGjzpP7xqOigCTzpP7xo86T+8ajooAk86T+8aPOk/vGo6KAJPOk/vGlSZ94+Y9aipU++PrQBNPK4lbDGmedJ/eNFx/rWqMUASebJ/eNL5z/3jUdFICTzn/vGjzn/ALxqOigCTzn/ALxo85/7xqOigCTzn/vGlSV9w+Y1FSp98fWgCaaVxI3zGmec/wDeNE/+tao6YyTzX/vGl81/7xqMUUhEnnP/AHjR5z/3jUdFAEnnP/eNHnP/AHjUdFAEnnP/AHjSpK+4fMaipyffH1oGSzSuJW+Y0zzn/vGif/WtUdAEnnP/AHjR5z/3jUdFAEnnP/eNL5r/AN41FS0ASea/940ec/8AeNMooAf5z/3jTklfcPmNRUqffH1oAmmlcSNhjUfnP/eNE/8ArWplAD/Of+8aPOf+8aZRQA/zn/vGjzn/ALxplFAD/Of+8aPOf+8aZRQA/wA5/wC8ackr7h8xqKlT74+tAE00riRsMaj85/7xon/1rUykBJ5r/wB40ea/941GKWgB/mv/AHjR5r/3jTKKAH+a/wDeNHmv/eplFAD/ADX/AL1OSV9w+aoqVPvj60ATTSuJDzUfmv8A3qJ/9a1MoAf5r/3qPNf+9TKKAH+a/wDeo81/71MooAf5r/3qPNf+9TKKAH+a/wDepySvuHzVFSp98fWgCaaVxIeaj81/71E/+tamUAP81/71Hmv/AHqZRQA/zX/vUea/96mUUAP81/71Hmv/AHqZRQA/zX/vU5JX3D5qipU++PrQBNNK4kPNR+a/96if/WtTKAH+a/8Aeo81/wC9TKKAH+a/96jzX/vUyigB/mv/AHqPNf8AvUyigB/mv/epySvuHzVFSp98fWgCaaVxIeaj81/71E/+tamUAP8ANf8AvUea/wDeplFAD/Nf+9R5r/3qZRQA/wA1/wC9R5r/AN6mUUAP81/71OSV9w+aoqVPvj60ATTSuJDzUfmv/eon/wBa1MoAf5r/AN6jzX/vUyigB/mv/eoplFACXf8Ax8P9ahqa7/4+H+tQ1YgooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP8AWtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/wBa1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/AFrVHUlx/rWqOkAUUUUAFFFFABRRRQAtOT74+tNFOT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqMVJcf61qjFAC0UUUgCiiigAooopgFKn3x9aSlT74+tAD5/9a1R1JP/AK1qjoGKKKBRSEFFFFABRRRQAU5Pvj602nJ98fWgY6f/AFrVHUk/+tao6ACiiigApRSUooAWiiigApU++PrSUqffH1oAdP8A61qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKQAKWkpaACiiigAooooAKVPvj60lKn3x9aAHT/wCtamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/wDrWplPn/1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/wBa1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/wDWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/8ArWplPn/1rUygAooooAKKKKAEu/8Aj4f61DU13/x8P9ahqxBRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWkA64/wBa1R1Jcf61qjoAKKKKACiiigBRS02nUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB8/+ub60yn3H+tamUAFFFFIAooooAKKKKAClT74+tJSp98fWmA+f/WtUYqSf/WtUYoGLRRRSEFFFFABRRRQAU5Pvj602nJ98fWgY6f/AFrVHUk/+tao6AClFJRQA6iiigQUUUUDClT74+tJSp98fWgB0/8ArWplPn/1rUygAooooAKKKKACiiigApY/vj60lKn3x9aAHz/61qZT5/8AWtTKQBRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/AFrUynz/AOtamUAFFFFABRRRQAUUUUAFKn3x9aSlT74+tADp/wDWtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAUUUUAFFFFABRRRQAUqffH1pKVPvj60AOn/wBa1Mp8/wDrWplABRRRQAUUUUAJd/8AHw/1qGprv/j4f61DViCiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tIB1x/rWqOpLj/WtUdABRRRQAUUtGKAEp1JiloAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlj++PrQA+4/wBa1Mp84/etTKACiiikAUUUUwCiiigApU++PrSUqffH1oAfP/rWqMVJP/rWpmKBhRRRSEFFFFABRRRQAU5Pvj602nJ98fWgY6f/AFrVHUk/+tao6ACiiloAKWiigQUUUUDClT74+tJSp98fWgB0/wDrWplPn/1rUygAooooAKKKKACiiigApU++PrSU5B84+tADpv8AWtTKfN/rWplIAooooAKKKKACiiigApU++PrSUqffH1oAdP8A61qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f8A1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAS7/AOPh/rUNT3at9ofg9ai2N6GrENop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetIAuP8AWtUdTTq3mtwaj2N6GgBtFO2N6GjY3oaAEFLShG9DRsb0NACUUuxvQ0bG9DQAlKn3x9aNjehpyI28cHrQAtx/rWqOpZ1bzW4NR7G9DQAlFLsb0NGxvQ0AJRS7G9DRsb0NACUUuxvQ0bG9DQAlOj++KTY3oaciNvHB60AOn/1rVHUs6t5rcGo9rehoASil2t6Gja3oaQCUUu1vQ0bW9DTASil2t6Gja3oaAEpU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r7h81RUqffH1oAmmlcSHmo/Nf+9RP/rWplAD/Nf+9R5r/wB6mUUAP81/71FMooAS7/4+H+tQ1Nd/8fD/AFqGqEFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdABRRRQAUUUUAFFFFIApyffH1ptOT74+tADrj/WtUdSXH+tao6ACnU2nUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+tao6ACiiigAooooAKKKKACnJ94U2nR/eH1oAfP8A61qjqSf/AFrVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APm/wBa1Mp83+tamUgCiiigAooooAKKKKACnJ98fWm05Pvj60DHT/61qjqSf/WtUdACilptOoEFFFFABRRRQMKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAKBRRQAtKn3x9aSlT74+tIQ6f/WtTKfP/rWplAwooopgFFFFABRRRQAUqffH1pKVPvj60AOn/wBa1Mp8/wDrWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f8A1rUynz/61qZQAUUUUAFFFFABRRRQAUqffH1pKVPvj60AOn/1rUynz/61qZQAUmKWigBKWikxQAtFJn1paAClT74+tJSp98fWgB0/+tamU+f/AFrUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoAKKKKACiiigBLv/j4f61DU13/x8P8AWoaoQUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUgCnJ98fWm05Pvj60APuB+9ao8VLcf61qjoATFLRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigAxTk+8PrSUqffH1oAfP8A61qjqSf/AFrVHQAUUUUAFFFFABRRRQAU5Pvj602nR/fFAD5/9a1R1JP/AK1qjpAFFFFABRRRQAUUUUAFOT74+tNpyffH1oGOn/1rVHUk/wDrWqOgBcUtIKWgQUUUUAFFFFABSp98fWkpU++PrQMdP/rWplPn/wBa1MoAKKKKACiiigAoxRS0gClT74+tJSp98fWgQ6f/AFrUynz/AOtamUDCiiigAooopgFFFFABSp98fWkpU++PrQA6f/WtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAUUUUAFFFFABRRRQAUqZ3j60lKn3x9aAHTH961Mp8/+tao+lAC0UUUAFFFFABSdKWigApU++PrSYpU++KAHT/61qZT5/8AWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f8A1rUygAooooAKKKKAEu/+Ph/rUNTXf/Hw/wBahqhBRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1MoASilxRigBKKXFGKAEopcUYoASnJ98fWkxTkHzj60ALcf61qjqW4H75qioAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiigAooopXAKKKKACnJ98fWm05Pvj60ASXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAFpU++PrTRTk++PrQA+f/WtUdST/wCtao6ACiiigAooooAKKKKACnR/fH1ptKn3x9aAJJ/9a1R1JP8A61qjpAFFFFABRRRQAUUUUAFOT74+tNpyffH1oGOn/wBa1R1JP/rWqOgBRS02nUCCiiigAooooAKVPvj60lKn3x9aBjp/9a1Mp8/+tamUAFFFFABRRRQAUCiigBaVPvj60lKn3x9aQh0/+tamU+f/AFrUygAooooGFFFFABRRRTAKVPvj60lKn3x9aAHT/wCtamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/wDrWplPn/1rUygAooooAKKKKACiikz60ALSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAYpOlLRQAUUn0paACiiigApU+8PrSUqffH1oAdN/rWplPn/wBY1R0ALRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f8A1rUynz/61qZQAUUUUAFFFFACXf8Ax8P9ahqe7VvtD8HrUWxvQ1QhtFO2N6GjY3oaAG0U7Y3oaNjehoAbRTtjeho2N6GgBtOT74+tGxvQ05EbeOD1oALj/WtUdTTq3mtwaj2N6GgBtFO2N6GjY3oaAG0U7Y3oaNjf3TQA2in+W3900ojb+6aAGYp0Y+cfWniJv7pqSOJt44PWkK4ycfvmpm2rU8Tea3ymmiJv7poFcg20u2p/Lb0NHln+6aAuQbKNlT+Wf7ppdjf3TQFyvso2VY2N/dNJ5Z/umgLkBWlRfnX61N5Z/umnJGd44PWgLkFwv75qixV24jbzW4NRGJv7poC5WxSYqwYm/ummmJv7poHchpKlMbf3TTTG3900wGUU7Y3oaNjf3TQMbTk++PrRsb0NORG3jg9aAC4/1rVHU06t5rcGo9jehoAbRTtjeho2N6GgBtFO2N6GjY3oaAG0U7Y3oaNjehoAbTk++PrRsb0NORG3jg9aAC4/1rVHU06t5rcGo9jehoAbRTtjeho2N6GkwG0U7Y3oaNjehoAbSil2N6GlCN6GgBKVPvj60bG9DTkRt44PWgBbj/WtUdSzq3mtwaj2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/WtUdSzq3mtwaj2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEoFLsb0NKEb0NACUqffH1o2t6GnIrbxwaAFn/1rVHUs6t5rcGo9rehoASil2t6Gja3oaAEopdreho2t6GgBKKXa3oaNrehoASnR/eH1pNrehp0atvHBoAdP/rWqOpZ1bzW4NM2t6GkA2inbW9DRtb0NADaKdtb0NG1vQ0ANop21vQ0bW9DQA2nJ98fWja3oaVFbeODQMWf/WtUdSzq3mtwaZtb0NABRShW9DRtb0NAhKKXa3oaNrehoASil2t6Gja3oaAEpU++PrRtb0NORW3Dg0DCf/WtTKlnVvNbg1Htb0NACUUu1vQ0bW9DQAlFLtb0NG1vQ0AAoo2t6Gl2t6GkISlT74+tG1vQ05FbcODQAT/61qZUsyt5jcGo9rehpgJRS7W9DRtb0NAxKKXa3oaNrehoASil2t6Gja3oaAEpU++PrRtb0NORW3Dg0AE/+tamVLMreY3BqPa3oaAEopdreho2t6GgBKKXa3oaNrehoASil2t6Gja3oaAEpU++PrRtb0NORW3Dg0AE/wDrWplSzK3mNwaj2t6GgBKKXa3oaNrehoASil2t6Gja3oaAEopdreho2t6GgBuKch+cZ9aNrehpyK24cGgAn/1rUypJkbzGwDTNrehoASil2t6Gja3oaAEopdreho2t6GgBKKXY3oaNrehoASlT74+tG1vQ05FbcODQAT/61qZUsyt5jcGo9rehoAQUUpRvQ0bW9DQAlFLtb0NG1vQ0AJRS7W9DRtb0NACUqffH1o2t6GnIrbhwaACf/WtTKlmVvMbg1Htb0NACUUu1vQ0bW9DQAlFLtb0NFAC3Uri4cBj1qLzpP7xp13/x8P8AWoaoRJ50n940edJ/eNR0UASedJ/eNHnSf3jUdFAEnnSf3jR50n941HRQBJ50n9405Jn3j5j1qGnJ98fWgCaeZxK2GNR+dJ/eNFx/rWqOgCTzpP7xo86T+8aZSgUAPEsn9404Syf3jTVWpFWkK4CST+8aeJH/ALxoC0uKLiuKJJP7xp6SvuHzGojSo3zj60hE88riVsMaj85/7xplw375qiLUxljz3/vGk+0P/eNV91JuoCxZ+0P/AHqPtD/3jVbcaTNAWLX2h/7xo+0P/eqrmjcaAsWvtD/3jTknfePmPWqm6nRt84+tAWLk8ziVgGqPzpP7xqKdv3rU0NSAn85/7xpDK/8AeNRBqUGgQ4ySf3jTTJJ/eNOpCtFx3IzLJ/eNNMsn941IVpjLTC43zpP7xpUmfePmPWmEUIPnH1pjJZ5nErYY1H50n940XH+uao6BknnSf3jR50n941HRQBJ50n940edJ/eNR0UASedJ/eNHnSf3jUdFAEnnSf3jTkmfePmPWoacn3x9aAJp5nErYY1H50n940XH+tao6AJPOk/vGjzpP7xqOlxSAf50n940edJ/eNMxRigB/nSf3jSiaT+8ajxRQBL50n940qTPvHzHrUVKn3x9aAJp5XErYY0zzpP7xouP9a1R0ASedJ/eNHnSf3jUdFAEnnSf3jR50n941HRQBJ50n940edJ/eNR0UASedJ/eNKkz7x8x61FSp98fWgCaeVxK2GNM86T+8aLj/AFrVHQBJ50n940edJ/eNR0UASedJ/eNHnSf3jUdFAEnnSf3jR50n941HRigCXzn/ALxpUlfcPmNRUqffH1oAmmlcSN8xpnnP/eNE/wDrWqOgCTzn/vGjzn/vGo6KAJPOf+8aPOf+8ajooAk85/7xo85/7xqOigCTzn/vGlSZ94+Y1FTkHzj60ATTSv5jfMaZ5z/3jRP/AK1qjpASec/940ec/wDeNR0UASec/wDeNHnP/eNR0UASec/940ec/wDeNR0UASec/wDeNKkr7h8xqKnJ98fWgCWaVxK3zGmec/8AeNE/+tao6Bkgmf8AvGl85/7xqPFLQIf5z/3jR5z/AN40yigB/nP/AHjR5z/3jTKKAH+c/wDeNOSV9w+Y1FSp98fWgZNNK4kbDGo/Of8AvGif/WtTKAH+c/8AeNHnP/eNMooAf5z/AN40ec/940yigB/nP/eNKJn/AL1R0YpASea/96nJK+4fNUVKn3x9aBE00riQ81H5r/3qJ/8AWtTKAH+a/wDeo81/71MopgP81/71Hmv/AHqZRQMf5r/3qPNf+9TKKAH+a/8AepySvuHzVFSp98fWgCaaVxIeaj81/wC9RP8A61qZQA/zX/vUea/96mUUAP8ANf8AvUea/wDeplFAD/Nf+9R5r/3qZRQA/wA1/wC9TklfcPmqKlT74+tAE00riQ81H5r/AN6if/WtTKAH+a/96jzX/vUyigB/myD+Imjzn/vUyjFAD/Nf+9R5r/3qj6UtAD/Nf+9TklfcPmqKlT74+tAE00riQ81GZX/vGif/AFrUygB/nP8A3qPNf+9TKKAH+a/96jzX/vUyigB/mv8A3qDK/wDeplFAD/Of+9TklfcPmqE05PvCgCaaVxIeaj81/wC9RP8A61qZQA/zX/vUGV/7xplFAD/Nf+9R5r/3qj70tAD/ADX/AL1Hmv8A3qZRQA/zX/vU5JX3D5qipU++PrQBNNK4kPNR+a/96if/AFrUygB/mv8A3qPNf+9TKKAH+a/96imUUAJd/wDHw/1qGprv/j4f61DVCCiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1MqSf/AFzU0CgQAU9VpVWpVWkK4irTsUUhakIUnFNLUxmphOaY7Dy1IjfOPrTKfGPnX60AOuP9a1R4qedf3rU0LQFyPbS7alC0u0UBch20u2pcUYFICLbSbamwKMUBch20qL84+tS4FKijePrTC5FcA+c1R1auF/etUJWgLkeTTg1IVpMUDJA1PDVBShqBWLFNIzTVang5pCI2WmKvzj61ORmmhfnH1pjuRXI/fNUNWbpf3zVARQMbRRRTGFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdIApRRigUCFooooGFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFAAKWkpaAClT74+tJSp98fWgB8/+tao6kn/1rVHQAUUUUAFFFFABRRRQAU+P7wplOj++PrQA+f8A1rVHUk/+tao6ACiiikAUUUUAFFFFABTk++PrTacn3x9aAHT/AOtao6kn/wBa1R0DFFLTadQIKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoGFFFFABRRRQAUopKKAFpU++PrSUqffH1pCHT/61qZT5/8AWtTKACiiimAUUUUAFFFFAwpU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACikzS0AFFFFABSY9KWigApU++PrSGlT7w+tADp/wDWtTKfP/rWplABQaKKACikpaACiiigApU4cfWkpV+8KAHT/wCtamU+b/WNTKACiiigBDS0UgoAWiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigBLv/AI+H+tQ1Nd/8fD/WoaZNwoooouFwoooouFwoooouFwp0f31+tNqSIfOv1oAfMP3zUqrT5R+9anKtAmIoxSk4pScVEzUhCs1RlqRjSdaYwzSgZpVWpFWgBoWpYl+dfrSgYpyffH1pCuOnH71qjp9y371qhLUAPzSE1EWpN1AWJdwo3Cos0mTTHYm3CjcKhyaMmgLE24U+M/Ov1qvmnRt84+tAWLM/+tao8Uk7fvmpA9IQFaay1IDmloArFaaasMtRstMdxgNPVqjIoBxQMsA09Pvj61XVqmib51+tImwt0v71qrMtXbgZlaq7LTGViKSpWFRmgYlFFFFwuFFFFFwuFOT74+tNp8f3x9aAFuP9a1MFS3H+tao6BhRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFAoAKUUUUAFKn3x9aSlT74+tAD5/wDWtUdST/61qjoAKKKKACiiigAooooAKcn3x9abT0++PrQA6f8A1rVHUk/+tao6ACiiikAUUUUAFFFFABTk++PrTacn3x9aAHT/AOtao6kn/wBa1R0DClFApaBBRRRQAUUUUAFKn3x9aSlT74+tADp/9a1Mp8/+tamUDCiiigAooooAKKKUUAJTk+8PrSUqffH1oEOn/wBa1Mp8/wDrWplABRRRQAUUUUAFFFFAwpU++PrSUqffH1oAdP8A61qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKACk6UtFABRSUtABRRRQAUqffGPWkpU++KAHT/wCtamU+biVqZQAUUUUAFIPSlpDQAtFFFABSp98fWkpU++PrQA6fiVqZT7j/AFjUygAooooAKQ9aWg0AFFAooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAS7/AOPh/rUNTXf/AB8P9ahpkhRRRQAUUUUAFFFFACipoR86/Wo1FWIR86/WgRLKP3zU08CpJ+JWqBzSEIzVExpWNMpjDrT1WhRUqrQAKtSUU1mxSEKTimq3zj61GzU1T84+tMdiW5b981Q5qScZmamhaAEpcU8JTwtAXIdtLtqbaKMCkK5Dto21NgUYFAXINtKg+cfWpiopFT5x9aY7kdx/rWpgNT3K/vmqAigBwapFaq/SnBqAsWaQjNRq1SA5pCImWomFWmGaidaY0yIGpYW+dfrURGKWM/OPrQMuTH961MIyKbKf3rU5TkUiSJxULCrLioXFMaIaKU0lAwooooAKfH98fWmU6P76/WgCS4/1rVHUlx/rWqOgYUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3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vj60ATTSuJGwxqPzn/vGif8A1rUygB/nP/eNHnP/AHjTKKAH+c/940ec/wDeNMooAf5z/wB40ec/940yigB/nP8A3jTklfcPmNRUqffH1oAmmlcSNhjUfnP/AHjRP/rWplAD/Of+8aPOf+8aZRQA/wA5/wC8aPOf+8aZRQA/zn/vGjzn/vGmUUAP85/7xpySvuHzGoqVPvj60ATTSuJGwxqPzn/vGif/AFrUygB/nP8A3jR5z/3jTKKAH+c/940ec/8AeNMooAf5z/3jR5z/AN40yigB/nP/AHjTklfcPmNRUqffH1oAmmlcSNhjUfnP/eNE/wDrWplAD/Of+8aPOf8AvGmUUAP85/7xo85/7xplFAD/ADn/ALxo85/7xplFAD/Of+8ackr7h8xqKlT74+tAE00riRsMaj85/wC8aJ/9a1MoAf5z/wB40ec/940yigB/nP8A3jRTKKAFu/8Aj4f61FUt3/x8P9aiqgCiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/wBa1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP8AWtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aQh9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk+8PrTaWP74+tAEk/wDrWqOpJ/8AWtUdAwooooAKKKKACiiigApU++PrSUqffH1oAfP/AK1qjqSf/WtUdABRRRQAUUUUAFFFKKACnJ98fWm05Pvj60AOn/1rVHUk/wDrWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/9a1R1JP8A61qjpAFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdP/rWplPn/ANa1MzQAZpaKKACiiimAUUUUAFKn3x9aSlT74+tIB0/+tamU+f8A1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f/AFrUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoAKKKKACiiigBbv/j4f61FUt3/x8P8AWoqoAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/AFrVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWkIfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APn/1rUyn3H+taoxQAtFFFAwooooAKKKKAClT74+tJSp98fWgB8/+tao6kn/1rVHQAUUUUAFFFFABRRRQAU9Pvj60ynJ98fWgB8/+tao6kn/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB0/+tao6kn/1rVHQAUUUUAFFFFIAooooAKcn3x9abTk++PrQA6f/AFrVHUk/+tao6AClzSUUALS02loAWikzS0AFKn3x9aSlT74+tMB0/wDrWplPn/1rUygAooooAKKKKACiiikAUqffH1pKVPvj60WAdP8A61qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f8A1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigBbv/AI+H+tRVLd/8fD/WoqoAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6QgooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+taoxQACloxRQMKKKKACiiigApU++PrSUqffH1oAfP/rWqOpJ/wDWtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHT/61qZmn3H+tao6BC0UUUDCiiigAooooAKcn3x9abTk++PrQA6f/WtUdST/AOtao6ACiiigAooooAKKKKACnJ98fWm05Pvj60gHT/61qjqSf/WtUdABRRRQAUUUUAFLSUUwFpyffH1plOQ/OKAHz/61qZT5z+9amUAFFFFABRRRQAUUUUAFKn3x9aSlT74+tADp/wDWtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/rWplABRRRQAUUUUgCiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoAKKKKACiiigAooooAKVPvj60lKn3x9aYDp/wDWtTKfP/rWplABRRRQAUUUUALd/wDHw/1qKp7pWNw/B61Dsb0NMBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/WtUdSzq3mtwaj2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/WtUdSzq3mtwaj2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/AFrVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehpCEopdjeho2N6GgBKKXY3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0yigB/nP/eNOSV9w+Y1FSp98fWgCaaVxI2GNR+c/940T/wCtamUAP85/7xo85/7xplFAD/Of+8aPOf8AvGmUUAP85/7xo85/7xplFAD/ADn/ALxpySvuHzGoqVPvj60ATTSuJGwxqPzn/vGif/WtTKAH+c/940ec/wDeNMooAf5z/wB40ec/940yigB/nP8A3jR5z/3jTKKAH+c/9405JX3D5jUVKn3x9aAJppXEjYY1H5z/AN40T/61qZQA/wA5/wC8aPOf+8aZRQA/zn/vGimUUALd/wDHw/1qKpbv/j4f61FQIKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/AFrVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAzS0lGaAFpU++PrSUqffH1oGPn/1rVHUk/wDrWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfP8A61qjqSf/AFrVHQAUUUUAFFFFAgooooAKen3xTKcn3x9aAHz/AOtao6fP/rWplAwooooAKKKKACiiigApyffH1ptOT74+tADp/wDWtUdST/61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f8A1rVHUk/+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/ANa1R1JP/rWqOgAooooAKKKKACiiigBaVD84+tNpyffH1oAdOf3rUzNPn/1rVHQAuaM0lFAC5ozSUUALmjNJRQAuach+cfWmU5Pvj60APnP71qjzT5/9a1R0ALmjNJRQAuaM0lFAC5ozSUUALmlQ/OPrTacn3x9aAHTn961MzT5/9a1R0ALmjNJRQAuaKSigB93/AMfD/Woqlu/+Ph/rUVAgooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKWkooAWiiigYUqffH1pKVPvj60APn/1rVHUk/8ArWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfP/AK1qjqSf/WtUdABRRRQAUUUUCCiiigAp0f3x9abTk++PrQA+f/WtUdPuP9a1MzQAUUUUDCiiigAooooAKcn3x9abTk++PrQA6f8A1rVHUk/+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/ANa1R1JP/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/wDWtUdST/61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f8A1rVHUk/+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/ANa1R1JP/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/wDWtUdST/61qjoAKKKKACiiigB93/x8P9aiqW7/AOPh/rUVAgooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/wBa1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP8AWtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKAClpKKAFpU++PrTc05Pvj60DHz/61qjqSf/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+f/WtUdST/wCtao6ACiiigAooooAKKKKBBTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFLmkooAWikpc0AFFFFAwpyffH1ptOT74+tADp/9a1R1JP8A61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f/WtUdST/AOtao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/1rVHUk/wDrWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/9a1R1JP8A61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f/WtUdST/AOtao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/1rVHUk/wDrWqOgAooooAKKKKAH3f8Ax8P9aiqe6VjcPwetQ7G9DQISil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/wBa1R1LOrea3BqPY3oaAEopdjeho2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEpU++PrRsb0NORG3jg9aAFuP9a1R1LOrea3BqPY3oaAEopdjeho2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEpU++PrRsb0NORG3jg9aAFuP9a1R1LOrea3BqPY3oaAEopdjeho2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEpU++PrRsb0NORG3jg9aAFuP9a1R1LOrea3BqPY3oaAEopdjeho2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEpU++PrRsb0NORG3jg9aAFuP8AWtUdSzq3mtwaj2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/WtUdSzq3mtwaj2N6GgBKK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+PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/AFrVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACgUUUALRSZpaBhRRRQAUqffH1pKVPvj60APn/wBa1R1JP/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tAh1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOQ/OPrTacn3x9aAHz/AOtao6fcf61qjoAWijNFAwooooAKKKKACnJ98fWm05Pvj60AOn/1rVHUk/8ArWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/9a1R1JP/AK1qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f/WtUdST/wCtao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/1rVHUk/8ArWqOgAooooAKKKKAH3f/AB8P9aiqW7/4+H+tRUCCiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpJx+9ao8UAFFGKMUAFFGKMUALRRiigYUqffH1pKVPvj60APn/1rVHUk/8ArWqOgAooooAKKKKACiiigApU++PrSU5Pvj60AOn/ANa1R1JP/rWqOgQUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdABRS4oxQAlLmjFGKADNFGKMUAFOT74+tNxTk++PrQMdP/rWqOpJ/9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdP/rWqOpJ/9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdP/rWqOpJ/9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdP/rWqOpJ/9a1R0AFFFFABRRRQB//Z" alt="" aria-hidden="true">
+  <div class="ph-wm">Ψ</div>
+  <span class="ph-label">Services</span>
+  <h1 class="ph-title">Psychology-Based Support for Performance, Burnout, Visibility &amp; Sustainable Professional Growth</h1>
+  <p class="ph-sub">PsycheInsider works with professionals, founders, creatives, executives, and growth-oriented individuals seeking structured psychological support for the pressures that affect performance, confidence, visibility, emotional wellbeing, and long-term sustainability.</p>
+  <div class="ph-btns">
+    <a href="#" class="btn-w">Book a Consultation</a>
+    <a href="#" class="btn-gold">Explore OPTIMIZE</a>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="s-who">
+  <div class="sec-intro">
+    <span class="slabel">Who We Work With</span>
+    <h2 class="shead">Who These Services Are Designed For</h2>
+    <div class="srule center"></div>
+    <p class="sbody">PsycheInsider supports individuals and organizations navigating the psychological realities of modern professional life.</p>
+  </div>
+  <div class="who-grid">
+    <div class="who-col">
+      <div class="who-col-title">Individuals We Commonly Work With</div>
+      <div class="who-list">
+        <div class="who-item"><div class="who-dot"></div>Professionals experiencing burnout, stress, or emotional exhaustion</div>
+        <div class="who-item"><div class="who-dot"></div>High-achieving individuals struggling with pressure and sustainability</div>
+        <div class="who-item"><div class="who-dot"></div>Founders and entrepreneurs managing mental overload and visibility demands</div>
+        <div class="who-item"><div class="who-dot"></div>Experts and creatives dealing with fear of visibility or inconsistency</div>
+        <div class="who-item"><div class="who-dot"></div>Professionals seeking improved confidence and communication</div>
+        <div class="who-item"><div class="who-dot"></div>Individuals navigating career transitions and professional identity shifts</div>
+        <div class="who-item"><div class="who-dot"></div>Emerging professionals trying to improve consistency and performance</div>
+        <div class="who-item"><div class="who-dot"></div>Teams and organizations seeking healthier performance cultures</div>
+      </div>
+    </div>
+    <div class="who-col">
+      <div class="who-col-title">Common Challenges Clients Bring</div>
+      <div class="challenge-tags">
+        <span class="ctag ctag-au">Burnout</span><span class="ctag ctag-g">Chronic Stress</span>
+        <span class="ctag ctag-au">Emotional Fatigue</span><span class="ctag ctag-g">Performance Inconsistency</span>
+        <span class="ctag ctag-au">Fear of Visibility</span><span class="ctag ctag-g">Professional Self-Doubt</span>
+        <span class="ctag ctag-au">Perfectionism</span><span class="ctag ctag-g">Difficulty Sustaining Growth</span>
+        <span class="ctag ctag-au">Pressure Overload</span><span class="ctag ctag-g">Confidence Challenges</span>
+        <span class="ctag ctag-au">Communication Barriers</span><span class="ctag ctag-g">Work-Related Anxiety</span>
+        <span class="ctag ctag-au">High-Functioning Stress</span><span class="ctag ctag-g">Cognitive Overload</span>
+        <span class="ctag ctag-au">Professional Identity Confusion</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="s-approach">
+  <div class="sec-intro">
+    <span class="slabel">Our Approach</span>
+    <h2 class="shead">A Structured Psychological Approach</h2>
+    <div class="srule center"></div>
+    <p class="sbody">Many professional struggles are not simply productivity problems, discipline problems, or motivation problems. They are psychological patterns. Our work focuses on helping clients identify, understand, and manage the psychological factors affecting how they think, perform, communicate, recover from stress, and sustain growth over time.</p>
+  </div>
+  <div class="approach-grid">
+    <div class="ap-item"><div class="ap-icon"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div><div class="ap-pill">Foundation</div><div class="ap-title">Evidence-Based Principles</div><div class="ap-body">Every service grounded in clinical psychology and validated behavioral science.</div></div>
+    <div class="ap-item"><div class="ap-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><div class="ap-pill">Method</div><div class="ap-title">Structured Implementation</div><div class="ap-body">Practical frameworks applied to real professional environments and demands.</div></div>
+    <div class="ap-item"><div class="ap-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div><div class="ap-pill">Focus</div><div class="ap-title">Sustainable Growth Systems</div><div class="ap-body">Long-term functionality over short-term intensity or temporary motivation.</div></div>
+    <div class="ap-item"><div class="ap-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><div class="ap-pill">Outcome</div><div class="ap-title">Emotional Wellbeing</div><div class="ap-body">Healthier functioning, not just higher output. Performance and wellbeing together.</div></div>
+  </div>
+  <div class="approach-note">
+    <p>"This is applied psychology designed for modern professional life."</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="s-services">
+  <div class="sec-intro">
+    <span class="slabel">Core Services</span>
+    <h2 class="shead">How We Work With You</h2>
+    <div class="srule center"></div>
+  </div>
+
+  <!-- SERVICE 01 -->
+  <div class="svc-card">
+    <div class="svc-header">
+      <div>
+        <div class="svc-num-row"><span class="svc-num">01</span><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.44-4.14z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.44-4.14z"/></svg></div></div>
+        <div class="svc-title">Psychological Consultation</div>
+        <p class="svc-overview">One-on-one psychology-based consultation sessions focused on understanding and addressing the emotional, cognitive, and behavioral patterns affecting professional wellbeing and performance.</p>
+      </div>
+      <div class="svc-price-badge">
+        <div class="spb-from">Starting From</div>
+        <div class="spb-price">₦75,000</div>
+        <div class="spb-unit">per session</div>
+        <a href="#" class="spb-cta gold-cta">Book a Session</a>
+      </div>
+    </div>
+    <div class="svc-body">
+      <div class="svc-col">
+        <div class="svc-col-title">Areas Addressed</div>
+        <ul class="svc-items">
+          <li>Burnout and emotional exhaustion</li>
+          <li>Stress management</li>
+          <li>Confidence challenges</li>
+          <li>Fear of visibility</li>
+          <li>Cognitive overload</li>
+          <li>Performance anxiety</li>
+          <li>Emotional regulation</li>
+          <li>Professional identity concerns</li>
+        </ul>
+      </div>
+      <div class="svc-col">
+        <div class="svc-col-title">Session Structure</div>
+        <ul class="svc-items">
+          <li>60 to 90 minute sessions</li>
+          <li>Evidence-based psychological frameworks</li>
+          <li>Structured assessment and intervention</li>
+          <li>Personalized recommendations</li>
+          <li>Practical implementation systems</li>
+        </ul>
+      </div>
+      <div class="svc-col">
+        <div class="svc-col-title">What You Receive</div>
+        <ul class="svc-items">
+          <li>Psychological insight and pattern analysis</li>
+          <li>Structured coping and management strategies</li>
+          <li>Personalized psychological recommendations</li>
+          <li>Sustainable functioning frameworks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE 02 -->
+  <div class="svc-card">
+    <div class="svc-header">
+      <div>
+        <div class="svc-num-row"><span class="svc-num">02</span><div class="svc-icon"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div></div>
+        <div class="svc-title">Performance &amp; Visibility Optimization</div>
+        <p class="svc-overview">A psychology-driven service designed to help professionals improve performance, communication, consistency, confidence, and sustainable visibility without psychological overwhelm. Focused on the internal psychological factors affecting how professionals show up, communicate expertise, sustain momentum, and manage visibility-related stress.</p>
+      </div>
+      <div class="svc-price-badge gold-badge">
+        <div class="spb-from">Starting From</div>
+        <div class="spb-price">₦150,000</div>
+        <div class="spb-unit">per intensive session</div>
+        <a href="#" class="spb-cta">Enquire Now</a>
+      </div>
+    </div>
+    <div class="svc-tiers">
+      <div class="tier">
+        <div class="tier-label">Option 01</div>
+        <div class="tier-name">Intensive Optimization Session</div>
+        <div class="tier-desc">Single deep-dive strategic session for rapid psychological clarity and performance alignment.</div>
+        <div class="tier-price">₦150,000</div>
+        <div class="tier-note">Per session</div>
+        <a href="#" class="tier-btn outline">Book Session</a>
+      </div>
+      <div class="tier featured">
+        <div class="tier-featured-tag">Most Selected</div>
+        <div class="tier-label gold">Option 02</div>
+        <div class="tier-name">4-Week Structured Optimization Program</div>
+        <div class="tier-desc">Weekly sessions plus implementation systems for sustained performance and visibility growth.</div>
+        <div class="tier-price gold">₦450,000</div>
+        <div class="tier-note">Full program</div>
+        <a href="#" class="tier-btn gold">Enrol Now</a>
+      </div>
+      <div class="tier">
+        <div class="tier-label gold">Option 03</div>
+        <div class="tier-name">Executive-Level Private Engagement</div>
+        <div class="tier-desc">Customized ongoing psychological support for executives, founders, and senior professionals.</div>
+        <div class="tier-price gold">Custom</div>
+        <div class="tier-note">Tailored to scope</div>
+        <a href="#" class="tier-btn green">Get a Proposal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE 03 -->
+  <div class="svc-card">
+    <div class="svc-header">
+      <div>
+        <div class="svc-num-row"><span class="svc-num">03</span><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div></div>
+        <div class="svc-title">Workshops &amp; Corporate Sessions</div>
+        <p class="svc-overview">Structured psychology-informed sessions for organizations, leadership teams, institutions, and professional groups focused on wellbeing, resilience, burnout prevention, and sustainable performance.</p>
+      </div>
+      <div class="svc-price-badge deep-green">
+        <div class="spb-from">Starting From</div>
+        <div class="spb-price">₦500,000</div>
+        <div class="spb-unit">per session</div>
+        <a href="#" class="spb-cta gold-cta">Request a Proposal</a>
+      </div>
+    </div>
+    <div class="svc-body">
+      <div class="svc-col">
+        <div class="svc-col-title">Available Topics</div>
+        <ul class="svc-items">
+          <li>Burnout prevention</li>
+          <li>Stress management</li>
+          <li>Emotional resilience</li>
+          <li>Workplace psychological wellbeing</li>
+          <li>Sustainable performance</li>
+          <li>Communication under pressure</li>
+          <li>Managing cognitive overload</li>
+          <li>Leadership and emotional regulation</li>
+        </ul>
+      </div>
+      <div class="svc-col">
+        <div class="svc-col-title">Session Formats</div>
+        <ul class="svc-items">
+          <li>Corporate workshops</li>
+          <li>Team sessions</li>
+          <li>Leadership sessions</li>
+          <li>Wellness webinars</li>
+          <li>Conference speaking</li>
+          <li>Panel discussions</li>
+          <li>Organizational wellbeing programs</li>
+        </ul>
+      </div>
+      <div class="svc-col">
+        <div class="svc-col-title">Suitable For</div>
+        <ul class="svc-items">
+          <li>Corporate organizations</li>
+          <li>Healthcare teams</li>
+          <li>Startups and scale-ups</li>
+          <li>Educational institutions</li>
+          <li>Professional communities</li>
+          <li>Leadership groups</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTIMIZE SERVICE -->
+  <div class="opt-svc-card">
+    <div class="osc-top">
+      <div>
+        <div class="osc-label">04 · Signature Framework</div>
+        <div class="osc-title">OPTIMIZE Programs</div>
+        <p class="osc-body">OPTIMIZE™ is PsycheInsider's psychology-based educational and performance framework focused on helping professionals function at a higher and more sustainable level. The framework explores burnout, performance pressure, visibility, emotional regulation, confidence, professional identity, sustainable growth, and psychological resilience.</p>
+      </div>
+      <div class="osc-price-box">
+        <div class="osc-from">Starting From</div>
+        <div class="osc-price">₦120,000</div>
+        <div class="osc-unit">Program pricing varies by structure and duration</div>
+        <a href="#" class="osc-cta">Explore OPTIMIZE</a>
+      </div>
+    </div>
+    <div class="osc-grid">
+      <div class="osc-item"><div class="osc-item-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="osc-item-title">OPTIMIZE Framework</div><div class="osc-item-body">A structured psychological model for sustainable growth and performance.</div></div>
+      <div class="osc-item"><div class="osc-item-icon"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg></div><div class="osc-item-title">OPTIMIZE Podcast</div><div class="osc-item-body">Conversations around psychology, pressure, performance, and professional life.</div></div>
+      <div class="osc-item"><div class="osc-item-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="osc-item-title">OPTIMIZE Webinars</div><div class="osc-item-body">Deep dives into burnout, emotional regulation, confidence, visibility, and sustainable success.</div></div>
+      <div class="osc-item"><div class="osc-item-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="osc-item-title">OPTIMIZE Resources</div><div class="osc-item-body">Articles, breakdowns, worksheets, educational tools, and implementation systems.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="s-process">
+  <div class="sec-intro">
+    <span class="slabel">How We Work</span>
+    <h2 class="shead">What Working With PsycheInsider Looks Like</h2>
+    <div class="srule center"></div>
+  </div>
+  <div class="process-steps">
+    <div class="ps"><div class="ps-line"></div><span class="ps-step">01</span><div class="ps-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="ps-title">Initial Inquiry</div><div class="ps-body">Complete a consultation or inquiry form outlining your current challenges, goals, and areas of concern.</div></div>
+    <div class="ps"><div class="ps-line"></div><span class="ps-step">02</span><div class="ps-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div class="ps-title">Assessment &amp; Clarity</div><div class="ps-body">We identify the psychological, behavioral, and performance-related patterns influencing your current experience.</div></div>
+    <div class="ps"><div class="ps-line"></div><span class="ps-step">03</span><div class="ps-icon"><svg viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.44-4.14z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.44-4.14z"/></svg></div><div class="ps-title">Structured Support</div><div class="ps-body">Evidence-based psychological guidance, frameworks, and practical implementation systems tailored to your needs.</div></div>
+    <div class="ps"><div class="ps-line"></div><span class="ps-step">04</span><div class="ps-icon"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="ps-title">Sustainable Growth</div><div class="ps-body">Long-term focus on healthier functioning, emotional wellbeing, performance, and sustainable professional growth.</div></div>
+  </div>
+</section>
+
+<!-- WHY DIFFERENT -->
+<section class="s-why">
+  <div class="why-inner">
+    <span class="slabel w">Why This Approach Is Different</span>
+    <h2 class="shead white">Why PsycheInsider Exists</h2>
+    <div class="srule center" style="background:linear-gradient(90deg,var(--gold),var(--dgold))"></div>
+    <p class="sbody" style="color:rgba(255,255,255,0.52);max-width:620px;margin:0 auto">Many professionals are taught how to grow professionally. Very few are taught how to manage the psychological consequences of growth. PsycheInsider exists to bridge that gap.</p>
+    <div class="why-list">
+      <div class="wl-item"><div class="wl-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Burnout, inconsistency, and fear of visibility are not isolated experiences</div>
+      <div class="wl-item"><div class="wl-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>They are connected to how professionals think, work, recover, and sustain themselves</div>
+      <div class="wl-item"><div class="wl-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>The goal is not simply more productivity</div>
+      <div class="wl-item"><div class="wl-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>The goal is healthier, more sustainable functioning over time</div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERSHIPS -->
+<section class="s-partnerships">
+  <div class="sec-intro">
+    <span class="slabel">Partnerships &amp; Collaborations</span>
+    <h2 class="shead">Work With PsycheInsider</h2>
+    <div class="srule center"></div>
+    <p class="sbody">PsycheInsider is open to meaningful collaborations with organizations, platforms, and individuals whose work aligns with the mission of psychological wellbeing and professional growth.</p>
+  </div>
+  <div class="partner-grid">
+    <div class="partner-card">
+      <div class="pc-icon green-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+      <div class="pc-type">Corporate &amp; Organizational</div>
+      <div class="pc-title">Organizational Wellbeing Partnerships</div>
+      <div class="pc-body">Ongoing retainer-based psychological wellbeing support for companies, institutions, and organizations looking to build healthier, more sustainable professional cultures.</div>
+      <div class="pc-tags"><span class="pc-tag">Wellness Programs</span><span class="pc-tag">Leadership Development</span><span class="pc-tag">Team Resilience</span><span class="pc-tag">Burnout Prevention</span></div>
+      <a href="#" class="pc-cta">Start a Conversation →</a>
+    </div>
+    <div class="partner-card">
+      <div class="pc-icon gold-icon"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg></div>
+      <div class="pc-type gold">Media &amp; Content</div>
+      <div class="pc-title">Media, Podcast &amp; Speaking Collaborations</div>
+      <div class="pc-body">Adesuwa is available for podcast appearances, panel discussions, keynote speaking, webinar co-hosting, and expert contributions on psychology, performance, burnout, and professional wellbeing.</div>
+      <div class="pc-tags"><span class="pc-tag">Podcast Guest</span><span class="pc-tag">Keynote Speaking</span><span class="pc-tag">Panel Expert</span><span class="pc-tag">Webinar Co-host</span></div>
+      <a href="#" class="pc-cta" style="color:var(--dgold);border-color:rgba(218,178,82,0.35)">Start a Conversation →</a>
+    </div>
+    <div class="partner-card">
+      <div class="pc-icon gold-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="pc-type gold">Community &amp; Platform</div>
+      <div class="pc-title">Community &amp; Platform Collaborations</div>
+      <div class="pc-body">Partnerships with professional communities, learning platforms, HR networks, wellness brands, and organizations whose audiences are navigating growth, performance, and psychological wellbeing.</div>
+      <div class="pc-tags"><span class="pc-tag">Brand Partnerships</span><span class="pc-tag">HR &amp; L&D Platforms</span><span class="pc-tag">Wellness Brands</span><span class="pc-tag">Professional Communities</span></div>
+      <a href="#" class="pc-cta" style="color:var(--dgold);border-color:rgba(218,178,82,0.35)">Start a Conversation →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="s-faq">
+  <div class="sec-intro">
+    <span class="slabel">Frequently Asked Questions</span>
+    <h2 class="shead">Questions About Our Services</h2>
+    <div class="srule center"></div>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item open">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <div class="faq-q-text">Do I need to be struggling severely before reaching out?</div>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">No. Many clients seek support proactively to improve sustainability, confidence, emotional regulation, or performance before reaching burnout levels.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <div class="faq-q-text">Is this therapy?</div>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">Some services are psychological consultation-based, while others focus on performance, visibility, and sustainable professional functioning. The appropriate structure depends on client needs and will be discussed during the initial inquiry process.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <div class="faq-q-text">Are sessions confidential?</div>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">Yes. Professional ethical and confidentiality standards apply across all services and engagements.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <div class="faq-q-text">Are services available internationally?</div>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">Yes. Virtual sessions and programs are available globally. In-person sessions are available in Nigeria.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <div class="faq-q-text">Do you work with organizations?</div>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">Yes. PsycheInsider provides workshops, corporate wellbeing sessions, organizational programs, and partnership retainers for teams and institutions.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+        <div class="faq-q-text">Is this only for high performers?</div>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">No. PsycheInsider supports both individuals seeking improved functioning and those already operating in demanding professional environments. The common factor is not status. It is psychological demand.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="s-cta">
+  <div class="cta-wm">Ψ</div>
+  <h2>Growth Should Not Cost You Your Psychological Wellbeing</h2>
+  <p>Understand the psychological patterns affecting your performance, visibility, confidence, stress, and growth, and learn how to manage them more sustainably.</p>
+  <div class="cta-btns">
+    <a href="#" class="btn-w">Book a Consultation</a>
+    <a href="#" class="btn-gold">Explore OPTIMIZE</a>
+    <a href="#footer" class="btn-ow">Contact PsycheInsider</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="fg">
+    <div>
+      <div class="logo"><img class="lmark" src="images/Psyche Insider Logo-03.png" alt="Psyche Insider"></div>
+      <p class="f-desc">A psychology-driven platform helping professionals understand and manage the psychological factors affecting performance, visibility, burnout, stress, confidence, growth, and sustainable success.</p>
+      <div class="fsocs">
+        <a href="#" class="fsoc">in</a>
+        <a href="#" class="fsoc"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" class="fsoc">f</a>
+        <a href="#" class="fsoc">𝕏</a>
+      </div>
+    </div>
+    <div>
+      <div class="fh">Platform</div>
+      <div class="flinks"><a href="#">Home</a><a href="#">About</a><a href="#">OPTIMIZE</a><a href="#">Blog</a><a href="#">Services</a></div>
+    </div>
+    <div>
+      <div class="fh">Services</div>
+      <div class="flinks"><a href="#">Psychological Consultation</a><a href="#">Performance Optimization</a><a href="#">Workshops &amp; Corporate</a><a href="#">OPTIMIZE Programs</a><a href="#">Partnerships</a></div>
+    </div>
+    <div>
+      <div class="fh">Get In Touch</div>
+      <div class="fnote">Enquiries, bookings, and partnership discussions</div>
+      <div class="femail"><input type="email" placeholder="Your email address"><button>Send</button></div>
+      <div class="fci"><div><b>✉</b>thepsycheinsider@gmail.com</div><div><b>🌐</b>psycheinsider.com</div></div>
+    </div>
+  </div>
+  <div class="fbot">
+    <div class="fbot-l">© 2025 PsycheInsider. All rights reserved.</div>
+    <div class="fbot-r"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Contact</a></div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>q.parentElement.classList.toggle('open'))
+})
+</script>
+</body>
+</html>

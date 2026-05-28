@@ -1,0 +1,652 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPTIMIZE - Advanced Psychology Personal Development Program</title>
+<meta name="description" content="Discover OPTIMIZE, our comprehensive personal development program combining psychology, neuroscience, and behavioral optimization.">
+<meta name="keywords" content="OPTIMIZE, personal development, psychology program, neuroscience, behavioral optimization">
+<meta name="author" content="PsycheInsider">
+<meta name="language" content="English">
+<link rel="canonical" href="https://psycheinsider.com/optimize">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OPTIMIZE - Personal Development Program">
+<meta property="og:description" content="Advanced psychology and personal development program combining research and practical techniques.">
+<meta property="og:url" content="https://psycheinsider.com/optimize">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPTIMIZE - Personal Development">
+<meta name="twitter:description" content="Comprehensive personal development program combining psychology and neuroscience."
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1B6B3A;--dgreen:#134E2A;--ddgreen:#0C3319;
+  --gold:#DAB252;--dgold:#B8932E;--lgold:#F5E8C4;--xlgold:#FAF3E0;
+  --o:#E8650A;
+  --ink:#0A1A0E;--body:#2A3D2E;--muted:#5C7062;
+  --cream:#FAF6ED;--sage:#EEF5EE;--offwhite:#F7FAF7;--warm:#FBF6EC;
+  --b:rgba(27,107,58,0.14);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:999;height:80px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--b)}
+.logo{display:flex;align-items:center;gap:12px}
+.lmark{width:auto;height:44px;object-fit:contain;display:block}
+.lname{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--ink)}
+.lname b{color:var(--green)}
+.nmenu{display:flex;align-items:center;gap:36px}
+.nmenu a{font-size:0.83rem;font-weight:500;color:var(--body);transition:color .2s}
+.nmenu a:hover{color:var(--green)}
+.nmenu a.active{color:var(--dgold);font-weight:600}
+.ncta{background:var(--green);color:#fff!important;padding:10px 24px;border-radius:6px;font-size:0.82rem;font-weight:600;transition:background .2s}
+.ncta:hover{background:var(--dgreen)!important}
+
+/* BUTTONS */
+.btn-green{background:var(--green);color:#fff;padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:600;border:2px solid var(--green);transition:all .2s;display:inline-block}
+.btn-green:hover{background:var(--dgreen);border-color:var(--dgreen)}
+.btn-gold{background:var(--gold);color:var(--ink);padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:700;border:2px solid var(--gold);transition:all .2s;display:inline-block}
+.btn-gold:hover{background:var(--dgold);border-color:var(--dgold)}
+.btn-outline-gold{background:transparent;color:var(--dgold);padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:600;border:2px solid var(--gold);transition:all .2s;display:inline-block}
+.btn-outline-gold:hover{background:var(--gold);color:var(--ink)}
+.btn-outline-green{background:transparent;color:var(--green);padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:600;border:2px solid var(--green);transition:all .2s;display:inline-block}
+.btn-outline-green:hover{background:var(--green);color:#fff}
+.btn-ow{background:transparent;color:#fff;padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:600;border:2px solid rgba(255,255,255,0.35);transition:all .2s;display:inline-block}
+.btn-ow:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
+.btn-w{background:#fff;color:var(--dgreen);padding:15px 34px;border-radius:7px;font-size:0.9rem;font-weight:700;border:2px solid #fff;transition:all .2s;display:inline-block}
+.btn-w:hover{background:rgba(255,255,255,0.92)}
+
+/* SHARED */
+.slabel{display:inline-block;font-size:0.67rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:14px}
+.slabel.gold{color:var(--dgold)}
+.slabel.w{color:rgba(255,255,255,0.4)}
+.slabel.gold-w{color:var(--gold)}
+.shead{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.3rem);font-weight:600;line-height:1.14;letter-spacing:-0.5px;color:var(--ink);margin-bottom:20px}
+.shead.white{color:#fff}
+.srule{width:54px;height:3px;background:linear-gradient(90deg,var(--green),var(--gold));border-radius:2px;margin-bottom:34px}
+.srule.center{margin-left:auto;margin-right:auto}
+.srule.gold{background:linear-gradient(90deg,var(--gold),var(--dgold))}
+.sbody{font-size:1rem;color:var(--body);line-height:1.9}
+.sec-intro{max-width:720px;margin:0 auto;text-align:center;margin-bottom:80px}
+.sec-intro .srule{margin:0 auto 34px}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(160deg,var(--ddgreen) 0%,#0F2E18 30%,#1A3010 55%,#1E3A10 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:120px 10% 100px;
+  position:relative;overflow:hidden;
+}
+.hero-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.22;mix-blend-mode:screen;z-index:0;}
+.hero::before{content:'';position:absolute;top:-120px;left:-100px;width:600px;height:600px;border-radius:50%;background:rgba(218,178,82,0.1);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-80px;right:-80px;width:460px;height:460px;border-radius:50%;background:rgba(218,178,82,0.07);pointer-events:none}
+.hero-wm{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:42vw;font-weight:700;color:rgba(255,255,255,0.025);line-height:1;pointer-events:none;white-space:nowrap}
+.hero-eyeline{display:flex;align-items:center;gap:14px;justify-content:center;margin-bottom:36px;position:relative;z-index:1}
+.hero-eyebar{width:44px;height:2px;background:var(--gold)}
+.hero-eyelabel{font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.38)}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(4.5rem,10vw,9rem);font-weight:700;line-height:0.95;letter-spacing:-2px;color:#fff;margin-bottom:10px;position:relative;z-index:1}
+.hero h1 span{display:block;font-size:clamp(0.9rem,1.6vw,1.2rem);font-weight:400;letter-spacing:8px;text-transform:uppercase;color:rgba(255,255,255,0.38);font-family:'Inter',sans-serif;margin-bottom:14px}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.52);line-height:1.88;max-width:620px;margin:30px auto 52px;position:relative;z-index:1}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.hero-scroll{position:absolute;bottom:44px;left:50%;transform:translateX(-50%);font-size:0.68rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.22);display:flex;flex-direction:column;align-items:center;gap:9px;z-index:1}
+.hero-scroll-line{width:1px;height:40px;background:linear-gradient(180deg,rgba(218,178,82,0.3),transparent)}
+
+/* RECOGNITION STRIP */
+.recognition{
+  background:linear-gradient(90deg,var(--dgold) 0%,var(--gold) 50%,var(--dgold) 100%);
+  padding:0 7%;display:flex;align-items:center;justify-content:center;
+}
+.rec-inner{display:flex;align-items:stretch;width:100%;max-width:1100px}
+.rec-item{flex:1;padding:24px 20px;border-right:1px solid rgba(255,255,255,0.2);text-align:center}
+.rec-item:last-child{border-right:none}
+.rec-icon{width:34px;height:34px;border-radius:50%;background:rgba(10,26,14,0.12);display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.rec-icon svg{width:17px;height:17px;stroke:var(--ddgreen);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.rec-main{font-size:0.85rem;font-weight:700;color:var(--ddgreen);margin-bottom:3px}
+.rec-sub{font-size:0.72rem;color:rgba(10,26,14,0.6)}
+
+/* WHAT IS OPTIMIZE */
+.s-what{background:#fff;padding:130px 7%}
+.what-pull{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.7rem,3vw,2.5rem);font-weight:400;font-style:italic;
+  color:var(--dgreen);line-height:1.45;
+  background:linear-gradient(135deg,rgba(27,107,58,0.05),rgba(218,178,82,0.07));
+  border-radius:18px;padding:52px 64px;
+  border:1px solid rgba(218,178,82,0.2);
+  max-width:860px;margin:0 auto 72px;text-align:center;
+}
+.what-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1100px;margin:0 auto}
+.wc{background:var(--offwhite);border-radius:16px;padding:38px 30px;border:1px solid rgba(27,107,58,0.08);border-top:3px solid rgba(218,178,82,0.4);transition:all .3s}
+.wc:hover{background:#fff;box-shadow:0 16px 50px rgba(218,178,82,0.12);border-top-color:var(--gold);transform:translateY(-5px)}
+.wc-icon{width:46px;height:46px;border-radius:12px;background:rgba(218,178,82,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.wc-icon svg{width:22px;height:22px;stroke:var(--dgold);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.wc-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--ink);margin-bottom:10px}
+.wc-body{font-size:0.84rem;color:var(--muted);line-height:1.78}
+
+/* PROBLEM RECOGNITION */
+.s-problem{
+  background:linear-gradient(150deg,var(--ddgreen) 0%,#0F2E18 40%,var(--dgreen) 100%);
+  padding:130px 7%;position:relative;overflow:hidden;
+}
+.s-problem::before{content:'';position:absolute;top:-80px;right:-80px;width:450px;height:450px;border-radius:50%;background:rgba(218,178,82,0.09);pointer-events:none}
+.s-problem::after{content:'';position:absolute;bottom:-60px;left:-60px;width:350px;height:350px;border-radius:50%;background:rgba(218,178,82,0.06);pointer-events:none}
+.prob-intro{text-align:center;max-width:680px;margin:0 auto 72px;position:relative;z-index:1}
+.prob-tags{display:flex;flex-wrap:wrap;gap:13px;justify-content:center;max-width:900px;margin:0 auto;position:relative;z-index:1}
+.ptag{padding:12px 24px;border-radius:50px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border:1.5px solid transparent;transition:all .2s;cursor:default}
+.ptag-g{background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.75);border-color:rgba(255,255,255,0.15)}
+.ptag-g:hover{background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.28)}
+.ptag-au{background:rgba(218,178,82,0.15);color:var(--gold);border-color:rgba(218,178,82,0.32)}
+.ptag-au:hover{background:rgba(218,178,82,0.24);border-color:rgba(218,178,82,0.5)}
+
+/* FUNNEL */
+.s-funnel{background:linear-gradient(160deg,#F3FAF5 0%,#FBF6EA 100%);padding:130px 7%}
+.funnel-steps{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:0;border:1px solid rgba(27,107,58,0.12);border-radius:20px;overflow:hidden}
+.funnel-step{display:flex;align-items:stretch;border-bottom:1px solid rgba(27,107,58,0.08);transition:background .2s;background:#fff}
+.funnel-step:last-child{border-bottom:none}
+.funnel-step:hover{background:var(--offwhite)}
+.fs-num{width:100px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;border-right:1px solid rgba(27,107,58,0.08);padding:36px 0}
+.fs-num-inner{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:rgba(218,178,82,0.3);line-height:1}
+.fs-icon{width:38px;height:38px;border-radius:9px;background:rgba(218,178,82,0.1);display:flex;align-items:center;justify-content:center}
+.fs-icon svg{width:18px;height:18px;stroke:var(--dgold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fs-content{padding:36px 44px;flex:1}
+.fs-stage{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--dgold);margin-bottom:8px}
+.fs-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:10px}
+.fs-body{font-size:0.88rem;color:var(--muted);line-height:1.75;max-width:580px}
+.fs-arrow{width:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-left:1px solid rgba(27,107,58,0.08)}
+.fs-arr{font-size:1.4rem;color:rgba(218,178,82,0.3);transition:color .2s}
+.funnel-step:hover .fs-arr{color:var(--gold)}
+
+/* PROGRAM TIERS */
+.s-programs{background:#fff;padding:130px 7%}
+.prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto}
+.prog-card{border-radius:20px;overflow:hidden;border:1px solid rgba(27,107,58,0.1);transition:all .3s;display:flex;flex-direction:column}
+.prog-card:hover{box-shadow:0 24px 64px rgba(27,107,58,0.12);transform:translateY(-6px)}
+.prog-card.featured{border-color:var(--gold);box-shadow:0 8px 32px rgba(218,178,82,0.15)}
+.prog-top{padding:44px 36px 32px;background:var(--offwhite);border-bottom:1px solid rgba(27,107,58,0.08);flex:1}
+.prog-card.featured .prog-top{background:linear-gradient(145deg,rgba(218,178,82,0.08),rgba(27,107,58,0.04))}
+.prog-badge{display:inline-block;font-size:0.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:18px}
+.prog-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.prog-icon svg{width:24px;height:24px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.prog-icon.green-i{background:rgba(27,107,58,0.08)}
+.prog-icon.green-i svg{stroke:var(--green)}
+.prog-icon.gold-i{background:rgba(218,178,82,0.1)}
+.prog-icon.gold-i svg{stroke:var(--dgold)}
+.prog-badge.starter{background:rgba(27,107,58,0.08);color:var(--dgreen)}
+.prog-badge.popular{background:rgba(218,178,82,0.14);color:var(--dgold)}
+.prog-badge.exec{background:rgba(27,107,58,0.1);color:var(--dgreen)}
+.prog-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--ink);margin-bottom:6px;line-height:1.2}
+.prog-duration{font-size:0.75rem;font-weight:600;color:var(--muted);margin-bottom:18px;letter-spacing:0.5px}
+.prog-desc{font-size:0.87rem;color:var(--body);line-height:1.78;margin-bottom:24px}
+.prog-includes{display:flex;flex-direction:column;gap:9px}
+.prog-item{display:flex;align-items:flex-start;gap:10px;font-size:0.83rem;color:var(--body);line-height:1.55}
+.prog-item::before{content:'';width:5px;height:5px;border-radius:50%;flex-shrink:0;margin-top:7px;background:var(--gold)}
+.prog-bottom{padding:28px 36px;background:#fff;border-top:1px solid rgba(27,107,58,0.08)}
+.prog-card.featured .prog-bottom{background:linear-gradient(135deg,rgba(218,178,82,0.04),#fff)}
+.prog-price-from{font-size:0.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.prog-price{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;line-height:1;margin-bottom:4px}
+.prog-price.green{color:var(--dgreen)}
+.prog-price.gold{color:var(--dgold)}
+.prog-note{font-size:0.75rem;color:var(--muted);margin-bottom:18px}
+.prog-cta{display:block;text-align:center;padding:13px 24px;border-radius:7px;font-size:0.85rem;font-weight:600;transition:all .2s}
+.prog-cta.green{background:var(--green);color:#fff}
+.prog-cta.green:hover{background:var(--dgreen)}
+.prog-cta.gold{background:var(--gold);color:var(--ink)}
+.prog-cta.gold:hover{background:var(--dgold)}
+
+/* CONSULTATION BRIDGE */
+.s-consult{
+  background:linear-gradient(150deg,var(--ddgreen) 0%,var(--dgreen) 50%,#1A4A25 100%);
+  padding:130px 7%;position:relative;overflow:hidden;
+}
+.s-consult::before{content:'';position:absolute;top:-80px;right:-80px;width:450px;height:450px;border-radius:50%;background:rgba(218,178,82,0.1);pointer-events:none}
+.s-consult::after{content:'';position:absolute;bottom:-60px;left:-60px;width:350px;height:350px;border-radius:50%;background:rgba(218,178,82,0.06);pointer-events:none}
+.consult-inner{max-width:800px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.consult-box{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:56px 64px;margin-top:52px}
+.consult-box-title{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:#fff;margin-bottom:14px;line-height:1.25}
+.consult-box-sub{font-size:0.9rem;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:36px}
+.consult-items{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:40px;text-align:left}
+.ci{display:flex;align-items:flex-start;gap:10px;font-size:0.86rem;color:rgba(255,255,255,0.65);line-height:1.55}
+.ci::before{content:none}
+.ci-check{width:22px;height:22px;border-radius:50%;background:rgba(218,178,82,0.18);border:1px solid rgba(218,178,82,0.35);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ci-check svg{width:12px;height:12px;stroke:var(--gold);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.consult-price{display:inline-flex;align-items:center;gap:16px;background:rgba(218,178,82,0.15);border:1px solid rgba(218,178,82,0.3);border-radius:10px;padding:16px 32px;margin-bottom:36px;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--gold)}
+.consult-price span{font-family:'Inter',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.3)}
+.consult-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* DM TRIGGER */
+.s-dm{background:linear-gradient(160deg,#F3FAF5 0%,#FBF6EA 100%);padding:120px 7%}
+.dm-box{max-width:720px;margin:0 auto;background:#fff;border-radius:20px;border:1px solid rgba(218,178,82,0.22);overflow:hidden}
+.dm-top{padding:52px 56px;background:linear-gradient(135deg,rgba(218,178,82,0.08),rgba(27,107,58,0.04));border-bottom:1px solid rgba(218,178,82,0.14);text-align:center}
+.dm-title{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--ink);margin-bottom:12px}
+.dm-sub{font-size:0.93rem;color:var(--body);line-height:1.8;max-width:500px;margin:0 auto}
+.dm-trigger{padding:44px 56px;text-align:center}
+.dm-keyword{display:inline-block;font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--dgreen);letter-spacing:-1px;background:rgba(218,178,82,0.08);border:2px solid rgba(218,178,82,0.25);border-radius:12px;padding:16px 40px;margin-bottom:22px;line-height:1}
+.dm-instruction{font-size:0.9rem;color:var(--muted);line-height:1.7;margin-bottom:32px}
+.dm-platforms{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.dm-platform{padding:10px 24px;border-radius:6px;font-size:0.83rem;font-weight:600;border:1.5px solid rgba(27,107,58,0.2);color:var(--green);background:#fff;transition:all .2s}
+.dm-platform:hover{background:var(--green);color:#fff;border-color:var(--green)}
+
+/* ECOSYSTEM */
+.s-ecosystem{background:#fff;padding:130px 7%}
+.eco-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:1100px;margin:0 auto}
+.eco-card{background:var(--offwhite);border-radius:18px;padding:40px 30px;border:1px solid rgba(27,107,58,0.08);border-left:4px solid rgba(218,178,82,0.3);transition:all .3s}
+.eco-card:hover{background:#fff;box-shadow:0 16px 50px rgba(27,107,58,0.1);border-left-color:var(--gold);transform:translateY(-5px)}
+.eco-icon{width:44px;height:44px;border-radius:11px;background:rgba(218,178,82,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.eco-icon svg{width:22px;height:22px;stroke:var(--dgold);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.eco-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--ink);margin-bottom:10px}
+.eco-body{font-size:0.84rem;color:var(--muted);line-height:1.78}
+
+/* WHY IT WORKS */
+.s-why{
+  background:linear-gradient(150deg,var(--ddgreen) 0%,var(--dgreen) 50%,#1A4A25 100%);
+  padding:130px 7%;position:relative;overflow:hidden;
+}
+.s-why::before{content:'';position:absolute;top:-80px;right:-80px;width:450px;height:450px;border-radius:50%;background:rgba(218,178,82,0.1);pointer-events:none}
+.s-why::after{content:'';position:absolute;bottom:-60px;left:-60px;width:350px;height:350px;border-radius:50%;background:rgba(218,178,82,0.06);pointer-events:none}
+.why-intro{text-align:center;max-width:660px;margin:0 auto 64px;position:relative;z-index:1}
+.why-rows{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:0;border:1px solid rgba(255,255,255,0.08);border-radius:16px;overflow:hidden;position:relative;z-index:1}
+.why-row{display:flex;align-items:flex-start;gap:22px;padding:28px 36px;background:rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.06);transition:background .2s}
+.why-row:last-child{border-bottom:none}
+.why-row:hover{background:rgba(255,255,255,0.08)}
+.why-bar{width:3px;min-height:32px;align-self:stretch;background:rgba(218,178,82,0.3);border-radius:2px;flex-shrink:0;transition:background .2s}
+.why-row:hover .why-bar{background:var(--gold)}
+.why-icon{width:30px;height:30px;border-radius:50%;background:rgba(218,178,82,0.12);border:1px solid rgba(218,178,82,0.28);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.why-icon svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.why-text{font-size:0.94rem;color:rgba(255,255,255,0.7);line-height:1.65}
+
+/* FINAL CTA */
+.s-cta{
+  background:linear-gradient(160deg,#0C1F0E 0%,var(--ddgreen) 35%,var(--dgreen) 70%,#1A4A25 100%);
+  padding:150px 7%;text-align:center;color:#fff;position:relative;overflow:hidden;
+}
+.s-cta::before{content:'';position:absolute;top:-100px;left:-80px;width:520px;height:520px;border-radius:50%;background:rgba(218,178,82,0.1);pointer-events:none}
+.s-cta::after{content:'';position:absolute;bottom:-80px;right:-60px;width:380px;height:380px;border-radius:50%;background:rgba(218,178,82,0.07);pointer-events:none}
+.cta-wm{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:28rem;font-weight:700;color:rgba(255,255,255,0.02);line-height:1;pointer-events:none;white-space:nowrap}
+.s-cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:600;line-height:1.12;max-width:780px;margin:0 auto 22px;position:relative;z-index:1}
+.s-cta p{font-size:1rem;color:rgba(255,255,255,0.55);max-width:540px;margin:0 auto 52px;line-height:1.85;position:relative;z-index:1}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+
+/* FOOTER */
+footer{background:linear-gradient(160deg,#EEF7F0 0%,#FAF4E4 100%);border-top:1px solid rgba(27,107,58,0.12);padding:90px 7% 48px}
+.fg{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.5fr;gap:64px;margin-bottom:60px;align-items:start}
+.f-desc{font-size:0.87rem;color:var(--muted);line-height:1.85;margin:18px 0 28px}
+.fsocs{display:flex;gap:10px}
+.fsoc{width:40px;height:40px;border-radius:9px;border:1px solid rgba(27,107,58,0.2);background:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--muted);transition:all .2s;cursor:pointer}
+.fsoc:hover{background:var(--green);color:#fff;border-color:var(--green)}
+.fh{font-size:0.67rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink);margin-bottom:22px}
+.flinks{display:flex;flex-direction:column;gap:12px}
+.flinks a{font-size:0.87rem;color:var(--muted);transition:color .15s}
+.flinks a:hover{color:var(--green)}
+.fnote{font-size:0.8rem;color:var(--muted);line-height:1.65;margin-bottom:13px}
+.femail{display:flex;border:1.5px solid rgba(27,107,58,0.2);border-radius:9px;overflow:hidden;background:#fff}
+.femail input{flex:1;border:none;padding:13px 16px;font-size:0.83rem;color:var(--ink);outline:none;background:transparent;font-family:'Inter',sans-serif}
+.femail button{background:var(--green);color:#fff;border:none;padding:13px 22px;font-size:0.82rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s}
+.femail button:hover{background:var(--dgreen)}
+.fci{margin-top:18px;display:flex;flex-direction:column;gap:9px}
+.fci div{font-size:0.83rem;color:var(--muted);display:flex;align-items:center;gap:9px}
+.fci b{color:var(--green)}
+.fbot{padding-top:28px;border-top:1px solid rgba(27,107,58,0.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.fbot-l{font-size:0.77rem;color:var(--muted)}
+.fbot-r{display:flex;gap:22px}
+.fbot-r a{font-size:0.77rem;color:var(--muted);transition:color .15s}
+.fbot-r a:hover{color:var(--green)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo"><img class="lmark" src="images/Psyche Insider Logo-03.png" alt="Psyche Insider"></div>
+  <div class="nmenu">
+    <a href="/">Home</a><a href="/about">About</a>
+    <a href="/optimize" class="active">OPTIMIZE</a>
+    <a href="/blog">Blog</a><a href="/services">Services</a>
+    <a href="/contact" class="ncta">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-bg-img" src="data:image/jpeg;base64,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UNKn3x9aAJ5p5RIwDmmfaJf75ps/+tamUAS/aJf75pfPl/vmohRQBL58v980efL/AHzUVFAEvny/3zR58v8AfNRUUAS+fL/fNKk8u4fOahpU++PrQBPNPIJCA5pnny/3zTZ/9a1MoAl8+X++aPPl/vmoqKAJfPl/vmjz5f75qKigCXz5f75o8+X++aiooAl8+X++aVJ5dw+c1DSp98fWgCeaeQSEBzTPPl/vmmz/AOtamUAS+fL/AHzR58v981FRQBL58v8AfNHny/3zUVFAEvny/wB80efL/fNRUUAS+fL/AHzSpPLuHzmoaVPvj60ATzTyCQgOaZ58v9802f8A1rUygCXz5f75o8+X++aiooAl8+X++aKiooAbd/8AHzJ9ahqa7H+kP9aixViEopcUYoASilxRigBKKXFGKAEpyffH1pMUqD5x9aAHXH+ub61HUtwP3zVHigBKKXFGKAEopcUYoASilxRigBKcn3x9aTFKg+cfWgB1x/rm+tR1LcD981R4oASilxRigBKKXFGKAEopcUYoASnJ98fWkxSoPnH1oAdcf65vrUdS3A/fNUeKAEopcUYoASilxRigBKKXFGKAEpyffH1pMUqD5x9aAHXH+ub61HUtwP3zVHigBKKXFGKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiikAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFKKMUUALRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigApaTFLSAKKKKAClT74+tJSp98fWgB8/+tao6kn/1rVHQCCiiihDClFJS0AFFFFAgpyffH1ptOT74+tAx0/8ArWqOpJ/9a1R0AFFFFABRRRQAUopKUUALSp98fWkpU++PrQA6f/WtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAUUUUgCiiigAooooAKVPvj60lKn3x9aAHT/wCtamVJP/rWqPFABRRijFABRRijFABRRijFABSp98fWkxTkHzj60ALP/rWpgqScfvWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAUUUUAFFFFABRRRQAUqffH1pKVPvj60AOn/wBa1Mp8/wDrWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f8A1rUynz/61qZQAUUUUAFFFFACXf8Ax8P9ahqa7/4+H+tQ1YgooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP8AWtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/wBa1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/AFrVHUlx/rWqOgAooopAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdADqKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP8AWtUdABRRRQAoooFFIAooooAKVPvj60lKn3x9aAHz/wCtao6kn/1rVHQCCiiigYClpBS0CCiiigApyffH1ptOT74+tAx0/wDrWqOpJ/8AWtUdABRRRQAUUUUAFKKSlFAC0qffH1pKVPvj60AOn/1rUynz/wCtamUAFFFFABRRRQAUUUUAFKn3x9aSlT74+tADp/8AWtTKfP8A61qZQAUUUUgCiiigAooooAKVPvj60lKn3x9aAHzf61qZT5v9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f8A1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAS7/AOPh/rUNTXf/AB8P9ahqxBRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdIAooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdTXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRS0AAooopAFFFFABSp98fWkpU++PrQA+f/WtUdST/wCtao6YwoopRQAgpaKKQgooooAKcn3x9abTk++PrQMdP/rWqOpJ/wDWtUdABRRRQAUUUUAFLQKWgApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKQBRRRQAUUUUAFFApaAEpU++PrRSp98fWgB03+tamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f/AFrUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/wCtamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/wDrWplPn/1rUygAooooAKKKKAEu/wDj4f61DU92rfaH4PWotjehqxDaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NADaKdsb0NGxvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADacn3x9aNjehpyI28cHrQAXH+tao6mnVvNbg1Hsb0NIBtFO2N6GjY3oaAG0U7Y3oaNjehoAbR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ipU++PrQBNNK4kPNR+a/96if/WtTKAH+a/8Aeo81/wC9TKKAH+a/96jzX/vUyigB/mv/AHqPNf8AvUyigB/mv/epySvuHzVFSp98fWgCaaVxIeaj81/71E/+tamUAP8ANf8AvUea/wDeplFAD/Nf+9R5r/3qZRQA/wA1/wC9R5r/AN6mUUAP81/71OSV9w+aoqVPvj60ATTSuJDzUfmv/eon/wBa1MoAf5r/AN6jzX/vUyigB/mv/eoplFACXf8Ax8P9ahqa7/4+H+tQ1YgooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP8AWtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/wBa1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/AFrVHUlx/rWqOkAUUUUAFFFFABRRRQAtOT74+tNFOT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqMVJcf61qjFAC0UUUgCiiigAooopgFKn3x9aSlT74+tAD5/9a1R1JP/AK1qjoGKKKBRSEFFFFABRRRQAU5Pvj602nJ98fWgY6f/AFrVHUk/+tao6ACiiigApRSUooAWiiigApU++PrSUqffH1oAdP8A61qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKQAKWkpaACiiigAooooAKVPvj60lKn3x9aAHT/wCtamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/wDrWplPn/1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/wBa1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/wDWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/8ArWplPn/1rUygAooooAKKKKAEu/8Aj4f61DU13/x8P9ahqxBRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWkA64/wBa1R1Jcf61qjoAKKKKACiiigBRS02nUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB8/+ub60yn3H+tamUAFFFFIAooooAKKKKAClT74+tJSp98fWmA+f/WtUYqSf/WtUYoGLRRRSEFFFFABRRRQAU5Pvj602nJ98fWgY6f/AFrVHUk/+tao6AClFJRQA6iiigQUUUUDClT74+tJSp98fWgB0/8ArWplPn/1rUygAooooAKKKKACiiigApY/vj60lKn3x9aAHz/61qZT5/8AWtTKQBRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/AFrUynz/AOtamUAFFFFABRRRQAUUUUAFKn3x9aSlT74+tADp/wDWtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAUUUUAFFFFABRRRQAUqffH1pKVPvj60AOn/wBa1Mp8/wDrWplABRRRQAUUUUAJd/8AHw/1qGprv/j4f61DViCiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1R1Jcf61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tIB1x/rWqOpLj/WtUdABRRRQAUUtGKAEp1JiloAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlj++PrQA+4/wBa1Mp84/etTKACiiikAUUUUwCiiigApU++PrSUqffH1oAfP/rWqMVJP/rWpmKBhRRRSEFFFFABRRRQAU5Pvj602nJ98fWgY6f/AFrVHUk/+tao6ACiiloAKWiigQUUUUDClT74+tJSp98fWgB0/wDrWplPn/1rUygAooooAKKKKACiiigApU++PrSU5B84+tADpv8AWtTKfN/rWplIAooooAKKKKACiiigApU++PrSUqffH1oAdP8A61qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f8A1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAS7/AOPh/rUNT3at9ofg9ai2N6GrENop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetABcf61qjqadW81uDUexvQ0ANop2xvQ0bG9DQA2inbG9DRsb0NADaKdsb0NGxvQ0ANpyffH1o2N6GnIjbxwetIAuP8AWtUdTTq3mtwaj2N6GgBtFO2N6GjY3oaAEFLShG9DRsb0NACUUuxvQ0bG9DQAlKn3x9aNjehpyI28cHrQAtx/rWqOpZ1bzW4NR7G9DQAlFLsb0NGxvQ0AJRS7G9DRsb0NACUUuxvQ0bG9DQAlOj++KTY3oaciNvHB60AOn/1rVHUs6t5rcGo9rehoASil2t6Gja3oaQCUUu1vQ0bW9DTASil2t6Gja3oaAEpU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r7h81RUqffH1oAmmlcSHmo/Nf+9RP/rWplAD/Nf+9R5r/wB6mUUAP81/71FMooAS7/4+H+tQ1Nd/8fD/AFqGqEFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdABRRRQAUUUUAFFFFIApyffH1ptOT74+tADrj/WtUdSXH+tao6ACnU2nUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+tao6ACiiigAooooAKKKKACnJ94U2nR/eH1oAfP8A61qjqSf/AFrVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APm/wBa1Mp83+tamUgCiiigAooooAKKKKACnJ98fWm05Pvj60DHT/61qjqSf/WtUdACilptOoEFFFFABRRRQMKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAKBRRQAtKn3x9aSlT74+tIQ6f/WtTKfP/rWplAwooopgFFFFABRRRQAUqffH1pKVPvj60AOn/wBa1Mp8/wDrWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f8A1rUynz/61qZQAUUUUAFFFFABRRRQAUqffH1pKVPvj60AOn/1rUynz/61qZQAUmKWigBKWikxQAtFJn1paAClT74+tJSp98fWgB0/+tamU+f/AFrUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoAKKKKACiiigBLv/j4f61DU13/x8P8AWoaoQUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUgCnJ98fWm05Pvj60APuB+9ao8VLcf61qjoATFLRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigAxTk+8PrSUqffH1oAfP8A61qjqSf/AFrVHQAUUUUAFFFFABRRRQAU5Pvj602nR/fFAD5/9a1R1JP/AK1qjpAFFFFABRRRQAUUUUAFOT74+tNpyffH1oGOn/1rVHUk/wDrWqOgBcUtIKWgQUUUUAFFFFABSp98fWkpU++PrQMdP/rWplPn/wBa1MoAKKKKACiiigAoxRS0gClT74+tJSp98fWgQ6f/AFrUynz/AOtamUDCiiigAooopgFFFFABSp98fWkpU++PrQA6f/WtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/AK1qZQAUUUUAFFFFABRRRQAUqZ3j60lKn3x9aAHTH961Mp8/+tao+lAC0UUUAFFFFABSdKWigApU++PrSYpU++KAHT/61qZT5/8AWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f8A1rUygAooooAKKKKAEu/+Ph/rUNTXf/Hw/wBahqhBRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1MoASilxRigBKKXFGKAEopcUYoASnJ98fWkxTkHzj60ALcf61qjqW4H75qioAKKKKACiiigAooooAKcn3x9abTk++PrQA64/1rVHUlx/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADrj/WtUdSXH+tao6ACiiigAooopXAKKKKACnJ98fWm05Pvj60ASXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAFpU++PrTRTk++PrQA+f/WtUdST/wCtao6ACiiigAooooAKKKKACnR/fH1ptKn3x9aAJJ/9a1R1JP8A61qjpAFFFFABRRRQAUUUUAFOT74+tNpyffH1oGOn/wBa1R1JP/rWqOgBRS02nUCCiiigAooooAKVPvj60lKn3x9aBjp/9a1Mp8/+tamUAFFFFABRRRQAUCii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UAJd/wDHw/1qGprv/j4f61DVCCiiigAooooAKKKKACnJ98fWm05Pvj60AOuP9a1MqSf/AFzU0CgQAU9VpVWpVWkK4irTsUUhakIUnFNLUxmphOaY7Dy1IjfOPrTKfGPnX60AOuP9a1R4qedf3rU0LQFyPbS7alC0u0UBch20u2pcUYFICLbSbamwKMUBch20qL84+tS4FKijePrTC5FcA+c1R1auF/etUJWgLkeTTg1IVpMUDJA1PDVBShqBWLFNIzTVang5pCI2WmKvzj61ORmmhfnH1pjuRXI/fNUNWbpf3zVARQMbRRRTGFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdIApRRigUCFooooGFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFAAKWkpaAClT74+tJSp98fWgB8/+tao6kn/1rVHQAUUUUAFFFFABRRRQAU+P7wplOj++PrQA+f8A1rVHUk/+tao6ACiiikAUUUUAFFFFABTk++PrTacn3x9aAHT/AOtao6kn/wBa1R0DFFLTadQIKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoGFFFFABRRRQAUopKKAFpU++PrSUqffH1pCHT/61qZT5/8AWtTKACiiimAUUUUAFFFFAwpU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACikzS0AFFFFABSY9KWigApU++PrSGlT7w+tADp/wDWtTKfP/rWplABQaKKACikpaACiiigApU4cfWkpV+8KAHT/wCtamU+b/WNTKACiiigBDS0UgoAWiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigBLv/AI+H+tQ1Nd/8fD/WoaZNwoooouFwoooouFwoooouFwp0f31+tNqSIfOv1oAfMP3zUqrT5R+9anKtAmIoxSk4pScVEzUhCs1RlqRjSdaYwzSgZpVWpFWgBoWpYl+dfrSgYpyffH1pCuOnH71qjp9y371qhLUAPzSE1EWpN1AWJdwo3Cos0mTTHYm3CjcKhyaMmgLE24U+M/Ov1qvmnRt84+tAWLM/+tao8Uk7fvmpA9IQFaay1IDmloArFaaasMtRstMdxgNPVqjIoBxQMsA09Pvj61XVqmib51+tImwt0v71qrMtXbgZlaq7LTGViKSpWFRmgYlFFFFwuFFFFFwuFOT74+tNp8f3x9aAFuP9a1MFS3H+tao6BhRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFAoAKUUUUAFKn3x9aSlT74+tAD5/wDWtUdST/61qjoAKKKKACiiigAooooAKcn3x9abT0++PrQA6f8A1rVHUk/+tao6ACiiikAUUUUAFFFFABTk++PrTacn3x9aAHT/AOtao6kn/wBa1R0DClFApaBBRRRQAUUUUAFKn3x9aSlT74+tADp/9a1Mp8/+tamUDCiiigAooooAKKKUUAJTk+8PrSUqffH1oEOn/wBa1Mp8/wDrWplABRRRQAUUUUAFFFFAwpU++PrSUqffH1oAdP8A61qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKACk6UtFABRSUtABRRRQAUqffGPWkpU++KAHT/wCtamU+biVqZQAUUUUAFIPSlpDQAtFFFABSp98fWkpU++PrQA6fiVqZT7j/AFjUygAooooAKQ9aWg0AFFAooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAS7/AOPh/rUNTXf/AB8P9ahpkhRRRQAUUUUAFFFFACipoR86/Wo1FWIR86/WgRLKP3zU08CpJ+JWqBzSEIzVExpWNMpjDrT1WhRUqrQAKtSUU1mxSEKTimq3zj61GzU1T84+tMdiW5b981Q5qScZmamhaAEpcU8JTwtAXIdtLtqbaKMCkK5Dto21NgUYFAXINtKg+cfWpiopFT5x9aY7kdx/rWpgNT3K/vmqAigBwapFaq/SnBqAsWaQjNRq1SA5pCImWomFWmGaidaY0yIGpYW+dfrURGKWM/OPrQMuTH961MIyKbKf3rU5TkUiSJxULCrLioXFMaIaKU0lAwooooAKfH98fWmU6P76/WgCS4/1rVHUlx/rWqOgYUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3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vj60ATTSuJGwxqPzn/vGif8A1rUygB/nP/eNHnP/AHjTKKAH+c/940ec/wDeNMooAf5z/wB40ec/940yigB/nP8A3jTklfcPmNRUqffH1oAmmlcSNhjUfnP/AHjRP/rWplAD/Of+8aPOf+8aZRQA/wA5/wC8aPOf+8aZRQA/zn/vGjzn/vGmUUAP85/7xpySvuHzGoqVPvj60ATTSuJGwxqPzn/vGif/AFrUygB/nP8A3jR5z/3jTKKAH+c/940ec/8AeNMooAf5z/3jR5z/AN40yigB/nP/AHjTklfcPmNRUqffH1oAmmlcSNhjUfnP/eNE/wDrWplAD/Of+8aPOf8AvGmUUAP85/7xo85/7xplFAD/ADn/ALxo85/7xplFAD/Of+8ackr7h8xqKlT74+tAE00riRsMaj85/wC8aJ/9a1MoAf5z/wB40ec/940yigB/nP8A3jRTKKAFu/8Aj4f61FUt3/x8P9aiqgCiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/wBa1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP8AWtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aQh9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk+8PrTaWP74+tAEk/wDrWqOpJ/8AWtUdAwooooAKKKKACiiigApU++PrSUqffH1oAfP/AK1qjqSf/WtUdABRRRQAUUUUAFFFKKACnJ98fWm05Pvj60AOn/1rVHUk/wDrWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/9a1R1JP8A61qjpAFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdP/rWplPn/ANa1MzQAZpaKKACiiimAUUUUAFKn3x9aSlT74+tIB0/+tamU+f8A1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/AOtamU+f/WtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f/AFrUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoAKKKKACiiigBbv/j4f61FUt3/x8P8AWoqoAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/AFrVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWkIfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APn/1rUyn3H+taoxQAtFFFAwooooAKKKKAClT74+tJSp98fWgB8/+tao6kn/1rVHQAUUUUAFFFFABRRRQAU9Pvj60ynJ98fWgB8/+tao6kn/1rVHQAUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB0/+tao6kn/1rVHQAUUUUAFFFFIAooooAKcn3x9abTk++PrQA6f/AFrVHUk/+tao6AClzSUUALS02loAWikzS0AFKn3x9aSlT74+tMB0/wDrWplPn/1rUygAooooAKKKKACiiikAUqffH1pKVPvj60WAdP8A61qZT5/9a1MoAKKKKACiiigAooooAKVPvj60lKn3x9aAHT/61qZT5/8AWtTKACiiigAooooAKKKKAClT74+tJSp98fWgB0/+tamU+f8A1rUygAooooAKKKKACiiigApU++PrSUqffH1oAdP/AK1qZT5/9a1MoAKKKKACiiigBbv/AI+H+tRVLd/8fD/WoqoAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6QgooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+taoxQACloxRQMKKKKACiiigApU++PrSUqffH1oAfP/rWqOpJ/wDWtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHT/61qZmn3H+tao6BC0UUUDCiiigAooooAKcn3x9abTk++PrQA6f/WtUdST/AOtao6ACiiigAooooAKKKKACnJ98fWm05Pvj60gHT/61qjqSf/WtUdABRRRQAUUUUAFLSUUwFpyffH1plOQ/OKAHz/61qZT5z+9amUAFFFFABRRRQAUUUUAFKn3x9aSlT74+tADp/wDWtTKfP/rWplABRRRQAUUUUAFFFFABSp98fWkpU++PrQA6f/WtTKfP/rWplABRRRQAUUUUgCiiigApU++PrSUqffH1oAdP/rWplPn/ANa1MoAKKKKACiiigAooooAKVPvj60lKn3x9aYDp/wDWtTKfP/rWplABRRRQAUUUUALd/wDHw/1qKp7pWNw/B61Dsb0NMBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/WtUdSzq3mtwaj2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/WtUdSzq3mtwaj2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/AFrVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehpCEopdjeho2N6GgBKKXY3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0yigB/nP/eNOSV9w+Y1FSp98fWgCaaVxI2GNR+c/940T/wCtamUAP85/7xo85/7xplFAD/Of+8aPOf8AvGmUUAP85/7xo85/7xplFAD/ADn/ALxpySvuHzGoqVPvj60ATTSuJGwxqPzn/vGif/WtTKAH+c/940ec/wDeNMooAf5z/wB40ec/940yigB/nP8A3jR5z/3jTKKAH+c/9405JX3D5jUVKn3x9aAJppXEjYY1H5z/AN40T/61qZQA/wA5/wC8aPOf+8aZRQA/zn/vGimUUALd/wDHw/1qKpbv/j4f61FQIKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/AFrVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAzS0lGaAFpU++PrSUqffH1oGPn/1rVHUk/wDrWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfP8A61qjqSf/AFrVHQAUUUUAFFFFAgooooAKen3xTKcn3x9aAHz/AOtao6fP/rWplAwooooAKKKKACiiigApyffH1ptOT74+tADp/wDWtUdST/61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f8A1rVHUk/+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/ANa1R1JP/rWqOgAooooAKKKKACiiigBaVD84+tNpyffH1oAdOf3rUzNPn/1rVHQAuaM0lFAC5ozSUUALmjNJRQAuach+cfWmU5Pvj60APnP71qjzT5/9a1R0ALmjNJRQAuaM0lFAC5ozSUUALmlQ/OPrTacn3x9aAHTn961MzT5/9a1R0ALmjNJRQAuaKSigB93/AMfD/Woqlu/+Ph/rUVAgooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKWkooAWiiigYUqffH1pKVPvj60APn/1rVHUk/8ArWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfP/AK1qjqSf/WtUdABRRRQAUUUUCCiiigAp0f3x9abTk++PrQA+f/WtUdPuP9a1MzQAUUUUDCiiigAooooAKcn3x9abTk++PrQA6f8A1rVHUk/+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/ANa1R1JP/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/wDWtUdST/61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f8A1rVHUk/+tao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/ANa1R1JP/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/wDWtUdST/61qjoAKKKKACiiigB93/x8P9aiqW7/AOPh/rUVAgooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/wBa1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP8AWtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKAClpKKAFpU++PrTc05Pvj60DHz/61qjqSf/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+f/WtUdST/wCtao6ACiiigAooooAKKKKBBTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFLmkooAWikpc0AFFFFAwpyffH1ptOT74+tADp/9a1R1JP8A61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f/WtUdST/AOtao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/1rVHUk/wDrWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/9a1R1JP8A61qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f/WtUdST/AOtao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/1rVHUk/wDrWqOgAooooAKKKKAH3f8Ax8P9aiqe6VjcPwetQ7G9DQISil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/1rVHUs6t5rcGo9jehoASil2N6GjY3oaAEopdjeho2N6GgBKKXY3oaNjehoASlT74+tGxvQ05EbeOD1oAW4/wBa1R1LOrea3BqPY3oaAEopdjeho2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEpU++PrRsb0NORG3jg9aAFuP9a1R1LOrea3BqPY3oaAEopdjeho2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEpU++PrRsb0NORG3jg9aAFuP9a1R1LOrea3BqPY3oaAEopdjeho2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEpU++PrRsb0NORG3jg9aAFuP9a1R1LOrea3BqPY3oaAEopdjeho2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEpU++PrRsb0NORG3jg9aAFuP8AWtUdSzq3mtwaj2N6GgBKKXY3oaNjehoASil2N6GjY3oaAEopdjeho2N6GgBKVPvj60bG9DTkRt44PWgBbj/WtUdSzq3mtwaj2N6GgBKK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+PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/AFrVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/wBa1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACgUUUALRSZpaBhRRRQAUqffH1pKVPvj60APn/wBa1R1JP/rWqOgAooooAKKKKACiiigApyffH1ptOT74+tAh1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP9a1R0AFFFFABRRRQAUUUUAFOQ/OPrTacn3x9aAHz/AOtao6fcf61qjoAWijNFAwooooAKKKKACnJ98fWm05Pvj60AOn/1rVHUk/8ArWqOgAooooAKKKKACiiigApyffH1ptOT74+tADp/9a1R1JP/AK1qjoAKKKKACiiigAooooAKcn3x9abTk++PrQA6f/WtUdST/wCtao6ACiiigAooooAKKKKACnJ98fWm05Pvj60AOn/1rVHUk/8ArWqOgAooooAKKKKAH3f/AB8P9aiqW7/4+H+tRUCCiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABSp98fWkpU++PrQA+4/1rVHUlx/rWqOgAooooAKKKKACiiigApU++PrSUqffH1oAfcf61qjqS4/1rVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP8AWtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpLj/AFrVHQAUUUUAFFFFABRRRQAUqffH1pKVPvj60APuP9a1R1Jcf61qjoAKKKKACiiigAooooAKVPvj60lKn3x9aAH3H+tao6kuP9a1R0AFFFFABRRRQAUUUUAFKn3x9aSlT74+tAD7j/WtUdSXH+tao6ACiiigAooooAKKKKAClT74+tJSp98fWgB9x/rWqOpJx+9ao8UAFFGKMUAFFGKMUALRRiigYUqffH1pKVPvj60APn/1rVHUk/8ArWqOgAooooAKKKKACiiigApU++PrSU5Pvj60AOn/ANa1R1JP/rWqOgQUUUUAFFFFABRRRQAU5Pvj602nJ98fWgB1x/rWqOpLj/WtUdABRRRQAUUUUAFFFFABTk++PrTacn3x9aAHXH+tao6kuP8AWtUdABRS4oxQAlLmjFGKADNFGKMUAFOT74+tNxTk++PrQMdP/rWqOpJ/9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdP/rWqOpJ/9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdP/rWqOpJ/9a1R0AFFFFABRRRQAUUUUAFOT74+tNpyffH1oAdP/rWqOpJ/9a1R0AFFFFABRRRQB//Z" alt="" aria-hidden="true">
+  <div class="hero-wm">OPTIMIZE</div>
+  <div class="hero-eyeline">
+    <div class="hero-eyebar"></div>
+    <div class="hero-eyelabel">PsycheInsider Signature Framework</div>
+    <div class="hero-eyebar"></div>
+  </div>
+  <h1>
+    <span>Psychology-Driven Performance</span>
+    OPTIMIZE
+  </h1>
+  <p class="hero-sub">A structured psychological framework and educational ecosystem designed to help professionals understand and manage the internal patterns affecting performance, burnout, visibility, confidence, and sustainable growth.</p>
+  <div class="hero-btns">
+    <a href="#" class="btn-gold">Start With OPTIMIZE</a>
+    <a href="#" class="btn-ow">Book a Consultation</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- RECOGNITION STRIP -->
+<div class="recognition">
+  <div class="rec-inner">
+    <div class="rec-item"><div class="rec-icon"><svg viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.44-4.14z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.44-4.14z"/></svg></div><div class="rec-main">Psychology-Driven</div><div class="rec-sub">Evidence-based framework</div></div>
+    <div class="rec-item"><div class="rec-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><div class="rec-main">Structured &amp; Applied</div><div class="rec-sub">Built for real professional environments</div></div>
+    <div class="rec-item"><div class="rec-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><div class="rec-main">4 to 12 Weeks</div><div class="rec-sub">Flexible program duration</div></div>
+    <div class="rec-item"><div class="rec-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="rec-main">Individual &amp; Group</div><div class="rec-sub">Multiple engagement formats</div></div>
+  </div>
+</div>
+
+<!-- WHAT IS OPTIMIZE -->
+<section class="s-what">
+  <div class="sec-intro">
+    <span class="slabel gold">What Is OPTIMIZE</span>
+    <h2 class="shead">A Structured Psychological System</h2>
+    <div class="srule center"></div>
+    <p class="sbody">OPTIMIZE is PsycheInsider's structured psychological performance system for professionals dealing with burnout cycles, performance instability, visibility anxiety, chronic pressure, identity confusion, and emotional exhaustion. It is a framework built around how you function psychologically, not just what you produce.</p>
+  </div>
+  <div class="what-pull">"OPTIMIZE was built on a single recognition: most professionals are not underperforming because they lack ambition. They are underperforming because the psychological demands of growth have never been properly understood or addressed."</div>
+  <div class="what-grid">
+    <div class="wc"><div class="wc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><div class="wc-title">Performance Psychology</div><div class="wc-body">Understanding the internal patterns that affect focus, execution, consistency, and recovery under pressure.</div></div>
+    <div class="wc"><div class="wc-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="wc-title">Burnout &amp; Emotional Regulation</div><div class="wc-body">Identifying and restructuring the cycles of overload, exhaustion, and emotional depletion that quietly erode output.</div></div>
+    <div class="wc"><div class="wc-icon"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div><div class="wc-title">Visibility &amp; Confidence</div><div class="wc-body">Addressing the psychological resistance behind fear of judgment, inconsistency, and professional self-doubt.</div></div>
+    <div class="wc"><div class="wc-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div><div class="wc-title">Sustainable Growth Systems</div><div class="wc-body">Building behavioral and psychological frameworks that support long-term functioning without chronic depletion.</div></div>
+  </div>
+</section>
+
+<!-- PROBLEM RECOGNITION -->
+<section class="s-problem">
+  <div class="prob-intro">
+    <span class="slabel gold-w">Does This Resonate With You?</span>
+    <h2 class="shead white">OPTIMIZE Addresses These Realities</h2>
+    <div class="srule gold center"></div>
+    <p class="sbody" style="color:rgba(255,255,255,0.52)">Many professionals recognise themselves in these patterns long before they seek structured support. If any of these feel familiar, OPTIMIZE was built for you.</p>
+  </div>
+  <div class="prob-tags">
+    <span class="ptag ptag-au">Burning out quietly</span>
+    <span class="ptag ptag-g">Inconsistent performance</span>
+    <span class="ptag ptag-au">Fear of being visible</span>
+    <span class="ptag ptag-g">Success that feels heavier over time</span>
+    <span class="ptag ptag-au">High functioning but emotionally exhausted</span>
+    <span class="ptag ptag-g">Unable to sustain momentum</span>
+    <span class="ptag ptag-au">Confidence that collapses under pressure</span>
+    <span class="ptag ptag-g">Chronic pressure and overload</span>
+    <span class="ptag ptag-au">Smart but struggling with execution</span>
+    <span class="ptag ptag-g">Identity confusion around ambition</span>
+  </div>
+</section>
+
+<!-- HOW OPTIMIZE WORKS -->
+<section class="s-funnel">
+  <div class="sec-intro">
+    <span class="slabel">How OPTIMIZE Works</span>
+    <h2 class="shead">The Path Into OPTIMIZE</h2>
+    <div class="srule center"></div>
+    <p class="sbody">OPTIMIZE is not a quick decision. It is a structured psychological process that begins with recognition and ends with lasting change. Every step is designed to build clarity before commitment.</p>
+  </div>
+  <div class="funnel-steps">
+    <div class="funnel-step">
+      <div class="fs-num"><div class="fs-num-inner">01</div><div class="fs-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div></div>
+      <div class="fs-content">
+        <div class="fs-stage">Recognition</div>
+        <div class="fs-title">You see yourself in the pattern</div>
+        <div class="fs-body">You come across content that names something you have been experiencing but have not been able to articulate. Burnout that does not look like burnout. Inconsistency that does not make sense given your effort. Visibility that feels mentally uncomfortable. That moment of recognition is where it begins.</div>
+      </div>
+      <div class="fs-arrow"><div class="fs-arr">↓</div></div>
+    </div>
+    <div class="funnel-step">
+      <div class="fs-num"><div class="fs-num-inner">02</div><div class="fs-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div></div>
+      <div class="fs-content">
+        <div class="fs-stage">Conversation</div>
+        <div class="fs-title">You reach out to understand more</div>
+        <div class="fs-body">Send the word OPTIMIZE on LinkedIn, Instagram, or X. What follows is a structured exchange designed to help you identify which patterns are most relevant to your current situation and whether OPTIMIZE is the right structure for you.</div>
+      </div>
+      <div class="fs-arrow"><div class="fs-arr">↓</div></div>
+    </div>
+    <div class="funnel-step">
+      <div class="fs-num"><div class="fs-num-inner">03</div><div class="fs-icon"><svg viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.44-4.14z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.44-4.14z"/></svg></div></div>
+      <div class="fs-content">
+        <div class="fs-stage">Consultation</div>
+        <div class="fs-title">A structured psychological session</div>
+        <div class="fs-body">The consultation maps your specific patterns across performance consistency, burnout cycles, visibility behavior, stress response, and professional identity. By the end of the session you have a clear picture of what is happening internally and a recommendation for the appropriate next step.</div>
+      </div>
+      <div class="fs-arrow"><div class="fs-arr">↓</div></div>
+    </div>
+    <div class="funnel-step">
+      <div class="fs-num"><div class="fs-num-inner">04</div><div class="fs-icon"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div></div>
+      <div class="fs-content">
+        <div class="fs-stage">Program</div>
+        <div class="fs-title">The OPTIMIZE Performance System</div>
+        <div class="fs-body">A 4 to 12 week structured program built specifically around the patterns identified in your consultation. Each week targets a defined area of psychological functioning. The goal is lasting change in how you operate, not a temporary boost in output.</div>
+      </div>
+      <div class="fs-arrow"><div class="fs-arr">✓</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM TIERS -->
+<section class="s-programs">
+  <div class="sec-intro">
+    <span class="slabel gold">Program Options</span>
+    <h2 class="shead">Choose Your OPTIMIZE Level</h2>
+    <div class="srule center"></div>
+    <p class="sbody">Every program is built around your specific psychological patterns. Program format and duration are determined during the consultation session to ensure the structure fits your needs.</p>
+  </div>
+  <div class="prog-grid">
+    <div class="prog-card">
+      <div class="prog-top">
+        <div class="prog-icon green-i"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <div class="prog-badge starter">Entry Level</div>
+        <div class="prog-name">OPTIMIZE Starter</div>
+        <div class="prog-duration">4 Weeks — Entry Transformation</div>
+        <div class="prog-desc">An introduction to the OPTIMIZE framework focused on identifying your key psychological patterns and beginning structured change.</div>
+        <div class="prog-includes">
+          <div class="prog-item">OPTIMIZE Framework Mapping</div>
+          <div class="prog-item">4 Weekly Guided Sessions</div>
+          <div class="prog-item">Visibility and Performance Reset</div>
+          <div class="prog-item">Emotional Regulation Foundations</div>
+          <div class="prog-item">Personalized Implementation Plan</div>
+        </div>
+      </div>
+      <div class="prog-bottom">
+        <div class="prog-price-from">Starting From</div>
+        <div class="prog-price green">₦450,000</div>
+        <div class="prog-note">4-week program</div>
+        <a href="#" class="prog-cta green">Enquire Now</a>
+      </div>
+    </div>
+    <div class="prog-card featured">
+      <div class="prog-top">
+        <div class="prog-icon gold-i"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="prog-badge popular">Most Selected</div>
+        <div class="prog-name">OPTIMIZE Standard</div>
+        <div class="prog-duration">8 Weeks — Deep Restructuring</div>
+        <div class="prog-desc">A comprehensive psychological restructuring program for professionals ready to address deep-rooted performance patterns and build sustainable systems.</div>
+        <div class="prog-includes">
+          <div class="prog-item">Full OPTIMIZE Framework Mapping</div>
+          <div class="prog-item">8 Weekly Structured Sessions</div>
+          <div class="prog-item">Burnout Cycle Restructuring</div>
+          <div class="prog-item">Visibility and Confidence Reset</div>
+          <div class="prog-item">Emotional Regulation Systems</div>
+          <div class="prog-item">Performance Consistency Framework</div>
+          <div class="prog-item">Sustainable Growth Architecture</div>
+        </div>
+      </div>
+      <div class="prog-bottom">
+        <div class="prog-price-from">Starting From</div>
+        <div class="prog-price gold">₦750,000</div>
+        <div class="prog-note">8-week program</div>
+        <a href="#" class="prog-cta gold">Enrol Now</a>
+      </div>
+    </div>
+    <div class="prog-card">
+      <div class="prog-top">
+        <div class="prog-icon green-i"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="prog-badge exec">Executive Level</div>
+        <div class="prog-name">OPTIMIZE Premium</div>
+        <div class="prog-duration">12 Weeks — Full Optimization System</div>
+        <div class="prog-desc">The complete OPTIMIZE experience for executives, founders, and senior professionals requiring deep, comprehensive psychological transformation and ongoing support.</div>
+        <div class="prog-includes">
+          <div class="prog-item">Full 12-Week OPTIMIZE System</div>
+          <div class="prog-item">Executive-Level Psychological Support</div>
+          <div class="prog-item">Complete Performance Architecture</div>
+          <div class="prog-item">Identity and Leadership Integration</div>
+          <div class="prog-item">Visibility Strategy and Psychology</div>
+          <div class="prog-item">Post-Program Support Framework</div>
+          <div class="prog-item">Custom Implementation Systems</div>
+        </div>
+      </div>
+      <div class="prog-bottom">
+        <div class="prog-price-from">Starting From</div>
+        <div class="prog-price green">₦1,200,000</div>
+        <div class="prog-note">12-week executive program</div>
+        <a href="#" class="prog-cta green">Get a Proposal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTATION BRIDGE -->
+<section class="s-consult">
+  <div class="consult-inner">
+    <span class="slabel gold-w">The Entry Point</span>
+    <h2 class="shead white">Start With a Consultation</h2>
+    <div class="srule gold center"></div>
+    <p class="sbody" style="color:rgba(255,255,255,0.52)">The consultation provides clarity before any program begins. You leave understanding exactly what is happening psychologically and what the appropriate next step looks like.</p>
+    <div class="consult-box">
+      <div class="consult-box-title">Psychological Performance &amp; Visibility Consultation</div>
+      <div class="consult-box-sub">A structured psychological session designed to identify the internal patterns affecting your performance, burnout cycles, visibility behavior, and stress response.</div>
+      <div class="consult-items">
+        <div class="ci" style="list-style:none"><div class="ci-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Psychological pattern mapping</div>
+        <div class="ci" style="list-style:none"><div class="ci-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Identification of pressure triggers</div>
+        <div class="ci" style="list-style:none"><div class="ci-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Visibility and performance analysis</div>
+        <div class="ci" style="list-style:none"><div class="ci-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Emotional regulation assessment</div>
+        <div class="ci" style="list-style:none"><div class="ci-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Breakdown of behavioral loops</div>
+        <div class="ci" style="list-style:none"><div class="ci-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Personalized structure for change</div>
+        <div class="ci" style="list-style:none"><div class="ci-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>OPTIMIZE program recommendation</div>
+        <div class="ci" style="list-style:none"><div class="ci-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Structured next steps</div>
+      </div>
+      <div class="consult-price">
+        <span>Session Fee</span>
+        ₦75,000 to ₦150,000
+      </div>
+      <div class="consult-btns">
+        <a href="#" class="btn-gold">Book a Consultation</a>
+        <a href="#" class="btn-ow">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DM TRIGGER -->
+<section class="s-dm">
+  <div class="sec-intro">
+    <span class="slabel">Not Ready for a Consultation Yet?</span>
+    <h2 class="shead">Start Here Instead</h2>
+    <div class="srule center"></div>
+    <p class="sbody">If you want to understand the OPTIMIZE framework before committing to a consultation, reaching out directly is a good first step.</p>
+  </div>
+  <div class="dm-box">
+    <div class="dm-top">
+      <div class="dm-title">Send the Word OPTIMIZE</div>
+      <div class="dm-sub">Reach out on any of these platforms and send one word. A structured conversation will follow to help you understand the framework and identify where psychological patterns may be affecting your professional functioning.</div>
+    </div>
+    <div class="dm-trigger">
+      <div class="dm-keyword">OPTIMIZE</div>
+      <div class="dm-instruction">Send this word to PsycheInsider on LinkedIn, Instagram, or X. The conversation that follows is structured around helping you gain clarity on your current patterns and how OPTIMIZE addresses them.</div>
+      <div class="dm-platforms">
+        <a href="#" class="dm-platform">LinkedIn</a>
+        <a href="#" class="dm-platform">Instagram</a>
+        <a href="#" class="dm-platform">X (Twitter)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section class="s-ecosystem">
+  <div class="sec-intro">
+    <span class="slabel">The OPTIMIZE Ecosystem</span>
+    <h2 class="shead">Beyond the Program</h2>
+    <div class="srule center"></div>
+    <p class="sbody">OPTIMIZE is also a content and educational ecosystem. Whether you are in a program or not, these resources exist to support your psychological understanding of professional growth.</p>
+  </div>
+  <div class="eco-grid">
+    <div class="eco-card"><div class="eco-icon"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg></div><div class="eco-title">The OPTIMIZE Podcast</div><div class="eco-body">Long-form conversations exploring the psychological realities of burnout, performance, visibility, and modern professional life.</div></div>
+    <div class="eco-card"><div class="eco-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="eco-title">OPTIMIZE Webinars</div><div class="eco-body">Structured sessions on burnout, emotional regulation, visibility psychology, confidence, and sustainable performance.</div></div>
+    <div class="eco-card"><div class="eco-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="eco-title">OPTIMIZE Framework</div><div class="eco-body">The core psychological model that underpins every session, program, and resource within the OPTIMIZE ecosystem.</div></div>
+    <div class="eco-card"><div class="eco-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="eco-title">Educational Content</div><div class="eco-body">Research-informed articles, professional breakdowns, applied psychological concepts, and implementation tools.</div></div>
+  </div>
+</section>
+
+<!-- WHY IT WORKS -->
+<section class="s-why">
+  <div class="why-intro">
+    <span class="slabel gold-w">Why OPTIMIZE Works</span>
+    <h2 class="shead white">Built Around How You Actually Function</h2>
+    <div class="srule gold center"></div>
+    <p class="sbody" style="color:rgba(255,255,255,0.52)">Most performance systems focus on what you should do differently. OPTIMIZE focuses on understanding why you are functioning the way you currently are and addressing that at its source.</p>
+  </div>
+  <div class="why-rows">
+    <div class="why-row"><div class="why-bar"></div><div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-text">Starts with psychological awareness and self-recognition, not pressure or urgency</div></div>
+    <div class="why-row"><div class="why-bar"></div><div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-text">Uses identity-based reflection rather than external motivation</div></div>
+    <div class="why-row"><div class="why-bar"></div><div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-text">Direct conversation creates genuine clarity around your specific situation</div></div>
+    <div class="why-row"><div class="why-bar"></div><div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-text">Consultation provides structured psychological assessment, not generic advice</div></div>
+    <div class="why-row"><div class="why-bar"></div><div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-text">The program structure follows naturally from what the consultation reveals</div></div>
+    <div class="why-row"><div class="why-bar"></div><div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-text">Everything is grounded in applied psychology, not performance trends or generic frameworks</div></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="s-cta">
+  <div class="cta-wm">OPTIMIZE</div>
+  <h2>The Work Begins With Understanding What Is Actually Happening</h2>
+  <p>Not harder effort. Not more discipline. A structured psychological understanding of the internal patterns affecting how you perform, sustain, and grow.</p>
+  <div class="cta-btns">
+    <a href="#" class="btn-gold">Start With OPTIMIZE</a>
+    <a href="#" class="btn-w">Book a Consultation</a>
+    <a href="#" class="btn-ow">Send OPTIMIZE</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="fg">
+    <div>
+      <div class="logo"><img class="lmark" src="images/Psyche Insider Logo-03.png" alt="Psyche Insider"></div>
+      <p class="f-desc">A psychology-driven platform helping professionals understand and manage the psychological factors affecting performance, visibility, burnout, stress, confidence, growth, and sustainable success.</p>
+      <div class="fsocs">
+        <a href="#" class="fsoc">in</a>
+        <a href="#" class="fsoc"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" class="fsoc">f</a>
+        <a href="#" class="fsoc">𝕏</a>
+      </div>
+    </div>
+    <div>
+      <div class="fh">Platform</div>
+      <div class="flinks"><a href="#">Home</a><a href="#">About</a><a href="#">OPTIMIZE</a><a href="#">Blog</a><a href="#">Services</a></div>
+    </div>
+    <div>
+      <div class="fh">OPTIMIZE</div>
+      <div class="flinks"><a href="#">What Is OPTIMIZE</a><a href="#">Program Options</a><a href="#">Book a Consultation</a><a href="#">Podcast</a><a href="#">Webinars</a></div>
+    </div>
+    <div>
+      <div class="fh">Get Started</div>
+      <div class="fnote">Enquiries, bookings, and OPTIMIZE conversations</div>
+      <div class="femail"><input type="email" placeholder="Your email address"><button>Send</button></div>
+      <div class="fci"><div><b>✉</b>thepsycheinsider@gmail.com</div><div><b>🌐</b>psycheinsider.com</div></div>
+    </div>
+  </div>
+  <div class="fbot">
+    <div class="fbot-l">© 2025 PsycheInsider. All rights reserved.</div>
+    <div class="fbot-r"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Contact</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
